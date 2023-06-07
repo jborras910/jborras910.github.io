@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--font awesome icon-->
+    <script
+      src="https://kit.fontawesome.com/6cea1e7bdb.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Bootstrap Css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      body,
+      .modal-content {
+        background-image: url("assets/BackgroundTip.jpg") !important;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+      }
+      .modal .btn {
+        font-weight: 600;
+        font-weight: 600;
+        background-color: #00adb5 !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- About Me Modal -->
+    <div
+      class="modal fade"
+      id="about_me"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="about_me"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              Read More about Jef
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              In addition to his academic pursuits, Jeferson possesses a diverse
+              set of hobbies that showcase his creativity and entrepreneurial
+              spirit. One of his interests lies in web development, where he
+              utilizes his technical expertise to create visually appealing and
+              functional websites. Jeferson's ability to combine design
+              principles with coding skills enables him to craft engaging
+              digital experiences for users.
+            </p>
+            <hr />
+            <p>
+              Furthermore, Jeferson has a knack for digital marketing. He
+              understands the importance of effectively promoting products and
+              services in the online realm. Through his knowledge of SEO (Search
+              Engine Optimization), content creation, and social media
+              marketing, he strives to enhance brand visibility and drive
+              organic traffic to websites.
+            </p>
+
+            <hr />
+            <p>
+              Jeferson's entrepreneurial aspirations are driven by his passion
+              for cryptocurrencies. As a cryptocurrency investor, he recognizes
+              the transformative potential of digital currencies and blockchain
+              technology. With a forward-thinking mindset, Jeferson aims to
+              leverage his expertise in the crypto space to build his own
+              business in the future. His goal is to contribute to the growing
+              landscape of blockchain technology, while also creating innovative
+              solutions to address the challenges faced by the industry.
+            </p>
+            <hr />
+            <p>
+              Jeferson Andaya Borras embodies the qualities of a versatile and
+              ambitious individual. His proficiency in cybersecurity, coupled
+              with his passion for web development, design, and digital
+              marketing, positions him as a well-rounded professional ready to
+              tackle the challenges of the digital world. With his
+              entrepreneurial spirit and involvement in the cryptocurrency
+              realm, Jeferson is poised to make a meaningful impact in the tech
+              industry and beyond.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary btn-block"
+              data-dismiss="modal"
+            >
+              Done
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Web Development Modal -->
+    <div
+      class="modal fade"
+      id="web_dev_read"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="web_dev_read"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content text-left">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              Web Development
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Jeferson Andaya Borras offers a comprehensive range of web
+              development services that cater to the specific needs of
+              individuals and businesses. With his expertise in the field, he
+              provides tailored solutions to create visually appealing,
+              user-friendly, and functional websites.
+            </p>
+            <hr />
+            <p>
+              Jeferson's web development services encompass the entire website
+              development process, from conceptualization to implementation. He
+              begins by thoroughly understanding the client's requirements,
+              target audience, and desired outcomes. With this information in
+              hand, Jeferson crafts a strategic plan to design and develop a
+              website that aligns with the client's goals.
+            </p>
+            <hr />
+            <p>
+              In addition to the technical aspects, Jeferson incorporates
+              cutting-edge design principles to enhance the aesthetics of the
+              website. He skillfully integrates colors, typography, and imagery
+              to create visually appealing layouts that resonate with the brand
+              identity and capture the attention of visitors.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary btn-block"
+              data-dismiss="modal"
+            >
+              DONE
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Grahpic Design Modal -->
+    <div
+      class="modal fade"
+      id="design"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="design"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content text-left">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              Graphic Design
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Jeferson Andaya Borras is a skilled graphic designer offering a
+              range of creative services that cater to diverse design needs.
+              With his artistic flair and technical expertise, he provides
+              visually compelling and effective designs for individuals and
+              businesses.
+            </p>
+            <hr />
+            <p>
+              Jeferson's graphic design services cover various areas, including
+              branding, marketing materials, print design, and digital media. He
+              understands the importance of creating a strong visual identity
+              for businesses and works closely with clients to develop
+              captivating brand assets that resonate with their target audience.
+            </p>
+            <hr />
+            <p>
+              Jeferson Andaya Borras's graphic design services combine artistic
+              creativity, technical proficiency, and a deep understanding of
+              branding and marketing principles. With his passion for design and
+              commitment to delivering exceptional results, he helps clients
+              elevate their visual presence and effectively communicate their
+              messages to the world.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary btn-block"
+              data-dismiss="modal"
+            >
+              DONE
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Digital Marketing Modal -->
+    <div
+      class="modal fade"
+      id="marketing"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="marketing"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">
+              Digital Marketing
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-left">
+            <p>
+              Jeferson Andaya Borras is a digital marketing expert who offers
+              comprehensive services to help businesses establish and strengthen
+              their online presence. With his in-depth knowledge of digital
+              marketing strategies and techniques, he assists clients in
+              reaching their target audience, driving brand awareness, and
+              achieving their marketing goals.
+            </p>
+            <hr />
+            <p>
+              Jeferson's digital marketing services encompass a wide range of
+              disciplines, including search engine optimization (SEO), social
+              media marketing, content marketing, paid advertising, and
+              analytics. He understands that each business has unique needs and
+              tailors his approach to create effective and customized digital
+              marketing campaigns.
+            </p>
+            <hr />
+            <p>
+              Jeferson Andaya Borras's digital marketing services are focused on
+              delivering results and helping businesses thrive in the digital
+              landscape. With his expertise in SEO, social media marketing,
+              content marketing, paid advertising, and analytics, he assists
+              clients in reaching their target audience, increasing brand
+              visibility, driving website traffic, and ultimately achieving
+              their business objectives.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary btn-block"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"><span> JB</span>orras<span></span></a>
+        <button
+          id="toggleMenu"
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="fa-solid fa-bars" id="icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#works">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav ml-auto">
+            <li>
+              <a
+                class="nav-link resume"
+                href="assets/Jeferson Borras Resume.pdf"
+                download="Resume.pdf"
+                target="_blank"
+              >
+                <i class="fa-solid fa-download mr-2"></i>Download CV
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="home" id="home">
+      <div class="container-fluid">
+        <div class="container">
+          <div
+            class="row flex-row-reverse align-items-center align-content-center"
+          >
+            <div class="col-md-5">
+              <img src="assets/2x2.png" alt="" />
+            </div>
+
+            <div class="col-md-7">
+              <h1>Hello, It's Me 👋</h1>
+              <h1 class="display-5">Jeferson Borras</h1>
+              <h1>I am <span class="auto-type"></span></h1>
+              <p>
+                My career goal as an full stack developer/designer and investor
+                is to use my technical knowledge, creativity, and business savvy
+                to develop novel solutions, accelerate digital transformation,
+                and make wise investments that produce long-term value.
+              </p>
+
+              <a
+                class="fb btn"
+                href="https://www.facebook.com/Jborras910"
+                target="_blank"
+                ><i class="fa-brands fa-facebook mr-2"></i>Facebook</a
+              >
+
+              <a
+                class="Linkedin btn"
+                href="https://www.linkedin.com/in/jeferson-borras-818a661b0/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin mr-2"></i>Linkedin</a
+              >
+            </div>
+          </div>
+
+          <div class="Tech_Stack text-center">
+            <h2>Tech Stack</h2>
+            <p>
+              Jeferson Andaya Borras utilized a robust technology stack to
+              develop his application, incorporating a variety of programming
+              languages, frameworks, databases, front-end and back-end tools,
+              and APIs. This comprehensive stack allowed him to create a
+              powerful and efficient application.
+            </p>
+
+            <i title="JavaScript" class="fa-brands fa-js"></i>
+            <i class="fa-brands fa-php"></i>
+            <i class="fa-brands fa-bootstrap"></i>
+            <i class="fa-brands fa-sass"></i>
+            <i class="fa-brands fa-react"></i>
+            <i class="fa-brands fa-laravel"></i>
+            <i class="fa-brands fa-node-js"></i>
+            <i class="fa-brands fa-git-alt"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container-fluid" data-aos="fade-right">
+        <div class="container">
+          <div class="row align-items-center align-content-center">
+            <div class="col-md-5"><img src="assets/ID_PIC.jpg" alt="" /></div>
+
+            <div class="col-md-7">
+              <h1>About <span>Me</span></h1>
+              <h4>Software Developer</h4>
+              <p>
+                Jeferson Andaya Borras is a dynamic individual hailing from
+                Quezon City, Philippines. He holds a major in Cybersecurity from
+                the prestigious Technological Institute of the Philippines,
+                located in Quezon City. With a passion for technology and a keen
+                interest in safeguarding digital systems, Jeferson is equipped
+                with the skills and knowledge to protect organizations from
+                cyber threats.
+              </p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#about_me"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="works" id="works">
+      <div class="container-fluid">
+        <div class="container text-center">
+          <div class="works-header" data-aos="fade-up">
+            <h1>Services</h1>
+            <p>
+              Jeferson Andaya Borras offers a range of services that cater to
+              the diverse needs of individuals and businesses. Here are the
+              primary services he provides:
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4" data-aos="fade-down">
+              <div class="card">
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>
+                  Using his proficiency in various programming languages such as
+                  HTML, CSS, JavaScript, and PHP, Jeferson builds websites that
+                  are responsive and compatible across different devices and
+                  browsers. He focuses on creating intuitive user interfaces,
+                  ensuring seamless navigation and an engaging user experience.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-toggle="modal"
+                  data-target="#web_dev_read"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-up">
+              <div class="card">
+                <i class="fa-solid fa-pen-fancy"></i>
+                <h2>Graphic Design</h2>
+                <p>
+                  In branding, Jeferson excels at crafting unique and memorable
+                  logos that encapsulate the essence of a brand. He pays
+                  attention to the client's values, mission, and target market
+                  to create a visual representation that captures their brand's
+                  personality and differentiates them from competitors.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-toggle="modal"
+                  data-target="#design"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+            <div class="col-md-4" data-aos="fade-down">
+              <div class="card">
+                <i class="fa-solid fa-chart-simple"></i>
+                <h2>Digital Marketing</h2>
+                <p>
+                  He uses best practises in SEO to optimise clients' websites
+                  for greater search engine ranks and increased organic
+                  visibility. He undertakes extensive keyword research,
+                  optimises on-page features, and creates methods for generating
+                  high-quality backlinks, all with the goal of increasing the
+                  website's exposure in search engine results.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-toggle="modal"
+                  data-target="#marketing"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="container-fluid text-center">
+        <div class="container">
+          <h1>Latest <span>Projects</span></h1>
+
+          <div class="row">
+            <div class="col-md-6" data-aos="fade-right">
+              <div class="box">
+                <img src="assets/queueing_system_project.png" alt="" />
+                <div class="box-body p-3">
+                  <h6>
+                    Web Application Queueing System for Technological Institute
+                    of the Philippines College of Computer Studies
+                  </h6>
+                </div>
+                <a class="btn btn-secondary" href="">View Here</a>
+              </div>
+            </div>
+
+            <div class="col-md-6" data-aos="fade-down">
+              <div class="box">
+                <img src="assets/PST project.png" alt="" />
+                <div class="box-body p-3">
+                  <h6>
+                    Web-based Student E-Scholar Tracking and Management System
+                    for Pasig City Scholarship Office
+                  </h6>
+                </div>
+                <a
+                  class="btn btn-secondary"
+                  target="_blank"
+                  href="https://pcs-escholar.com/"
+                  >View Here</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container-fluid">
+        <div class="container text-center">
+          <div class="contact-header">
+            <h1>Contact <span>Me</span></h1>
+          </div>
+
+          <form
+            class="text-left"
+            onsubmit="sendEmail(); reset(); return false;"
+            data-aos="flip-left"
+          >
+            <div class="row">
+              <div class="col-md-4">
+                <div class="form-group">
+                  <input type="text" placeholder="First Name..." />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <input type="text" placeholder="Last Name..." />
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="form-group">
+                  <input type="text" placeholder="Middle Name..." />
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="form-group">
+                  <input type="email" id="email" placeholder="Email..." />
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="form-group">
+                  <textarea
+                    placeholder="Message..."
+                    class=""
+                    name=""
+                    id=""
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                  <button type="submit" class="btn btn-primary btn-block mt-2">
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer text-center">
+      <h6>Copyright © by jborras | All Rights Reserved</h6>
+    </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script>
+      function sendEmail() {
+        const email = document.getElementById("email").value;
+
+        Email.send({
+          Host: "smtp.gmail.com",
+          Username: "jborras910@gmail.com",
+          Password: "gathrquaabwitxdb",
+          To: "jborras910@gmail.com",
+          From: email,
+          Subject: "Hello from JavaScript",
+          Body: "This is the body of the email",
+        })
+          .then(function (message) {
+            alert("Email sent successfully");
+            console.log(message);
+          })
+          .catch(function (error) {
+            alert("Error sending email");
+            console.log(error);
+          });
+      }
+    </script>
+  </body>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+    const toggleMenu = document.getElementById("toggleMenu");
+
+    toggleMenu.addEventListener("click", function () {
+      let icon = document.getElementById("icon");
+
+      if (icon.className === "fa-solid fa-bars") {
+        icon.classList.add("fa-xmark");
+        icon.classList.remove("fa-bars");
+      } else {
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-bars");
+      }
+    });
+  </script>
+
+  <script>
+    // Get all the navigation links
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    // Function to check which section is currently in view
+    function checkSectionInView() {
+      const sections = document.querySelectorAll("section");
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (window.scrollY >= sectionTop - sectionHeight / 3) {
+          // Remove the active class from all navigation links
+          navLinks.forEach((link) => {
+            link.classList.remove("active");
+          });
+          // Find the corresponding navigation link and add the active class
+          const currentNavLink = document.querySelector(
+            `a[href="#${section.id}"]`
+          );
+          currentNavLink.classList.add("active");
+        }
+      });
+    }
+
+    // Event listener for scroll event
+    window.addEventListener("scroll", checkSectionInView);
+  </script>
+
+  <script>
+    $(document).ready(function () {
+      $("body").scrollspy({ target: "#navbarNav" });
+    });
+  </script>
+
+  <!-- Bootstrap Script -->
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- Auto Typing -->
+
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+  <script>
+    let typed = new Typed(".auto-type", {
+      strings: ["Programmer", "Designer", "Developer"],
+      typeSpeed: 40,
+      backSpeed: 100,
+      loop: true,
+    });
+  </script>
+</html>
