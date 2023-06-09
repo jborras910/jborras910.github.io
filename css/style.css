@@ -109,7 +109,10 @@ nav {
   box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2) !important;
   width: 100% !important;
   z-index: 1 !important;
-  background-color: #222831 !important;
+  background-image: url("../assets/bg-dark.gif") !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  background-position: center;
 }
 
 .navbar-nav .nav-link.active {
@@ -251,7 +254,11 @@ nav .container {
 }
 
 .about {
-  background-color: #222831 !important;
+  background-image: url("../assets/bg-dark.gif") !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  background-position: center;
+
   color: #eeeeee !important;
   font-weight: 600;
 }
@@ -304,7 +311,10 @@ nav .container {
   cursor: pointer;
   width: 100%;
   padding: 15px;
-  background-color: #222831;
+  background-image: url("../assets/bg-dark.gif") !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  background-position: center;
   color: #eeeeee;
   border-radius: 10px;
   box-shadow: 0 4px 16px rgba(17, 17, 26, 0.1),
@@ -343,7 +353,11 @@ nav .container {
 }
 
 .projects {
-  background-color: #222831 !important;
+  background-image: url("../assets/bg-dark.gif") !important;
+
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  background-position: center;
   color: #eeeeee !important;
 }
 .projects h1 {
@@ -358,7 +372,7 @@ nav .container {
 }
 .projects .box {
   cursor: pointer;
-  border: 5px solid #393e46 !important;
+  border: 5px solid #222831 !important;
   margin-bottom: 30px !important;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
     rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
@@ -371,7 +385,7 @@ nav .container {
 
 .projects .box img {
   width: 100% !important;
-  border-bottom: 5px solid #393e46 !important;
+  border-bottom: 5px solid #222831 !important;
   height: 290px !important;
   margin-bottom: 15px !important;
 }
