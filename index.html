@@ -21,6 +21,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <style>
       body,
@@ -31,9 +32,18 @@
         background-position: center;
       }
       .modal .btn {
-        font-weight: 600;
-        font-weight: 600;
         background-color: #00adb5 !important;
+        color: #eeeeee !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        width: 100% !important;
+        box-shadow: #00adb5 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px,
+          rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px,
+          rgba(0, 0, 0, 0.07) 0px 32px 64px;
+      }
+      .btn {
+        font-weight: 600 !important;
+        border: none !important;
       }
     </style>
   </head>
@@ -304,7 +314,7 @@
               class="btn btn-primary btn-block"
               data-dismiss="modal"
             >
-              Close
+              DONE
             </button>
           </div>
         </div>
@@ -403,14 +413,16 @@
           <div class="Tech_Stack text-center">
             <h2>Tech Stack</h2>
             <hr />
-            <i title="JavaScript" class="fa-brands fa-js"></i>
-            <i class="fa-brands fa-php"></i>
-            <i class="fa-brands fa-bootstrap"></i>
-            <i class="fa-brands fa-sass"></i>
-            <i class="fa-brands fa-react"></i>
-            <i class="fa-brands fa-laravel"></i>
-            <i class="fa-brands fa-node-js"></i>
-            <i class="fa-brands fa-git-alt"></i>
+            <div class="Tech_Stack-body">
+              <i title="JavaScript" class="fa-brands fa-js"></i>
+              <i class="fa-brands fa-php"></i>
+              <i class="fa-brands fa-bootstrap"></i>
+              <i class="fa-brands fa-sass"></i>
+              <i class="fa-brands fa-react"></i>
+              <i class="fa-brands fa-laravel"></i>
+              <i class="fa-brands fa-node"></i>
+              <i class="fa-brands fa-git-alt"></i>
+            </div>
           </div>
         </div>
       </div>
