@@ -45,10 +45,45 @@
         font-weight: 600 !important;
         border: none !important;
       }
+
+      #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 100px;
+        right: 100px;
+        z-index: 99;
+        font-size: 20px;
+        border: none;
+        outline: none;
+        background: #00adb5 !important;
+        color: white;
+        cursor: pointer;
+        padding: 10px;
+        width: 50px;
+
+        box-shadow: #00adb5 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px,
+          rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px,
+          rgba(0, 0, 0, 0.07) 0px 32px 64px;
+      }
+      @media screen and (max-width: 1000px) {
+        #myBtn {
+          right: 10px;
+          bottom: 130px;
+        }
+      }
     </style>
   </head>
 
   <body>
+    <button
+      class="rounded-circle"
+      onclick="topFunction()"
+      id="myBtn"
+      title="Go to top"
+    >
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
     <!-- About Me Modal -->
     <div
       class="modal fade"
@@ -411,7 +446,8 @@
           </div>
 
           <div class="Tech_Stack text-center">
-            <h2>Tech Stack</h2>
+            <h2 class="line">Tech Stack</h2>
+
             <hr />
             <div class="Tech_Stack-body">
               <i title="JavaScript" class="fa-brands fa-js"></i>
@@ -638,8 +674,10 @@
       </div>
     </section>
 
-    <div class="footer text-center">
-      <h6>Copyright © by jborras | All Rights Reserved</h6>
+    <div class="footer container-fluid text-center">
+      <div class="container">
+        <h6>Copyright © by jborras | All Rights Reserved</h6>
+      </div>
     </div>
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
@@ -752,5 +790,32 @@
       backSpeed: 100,
       loop: true,
     });
+  </script>
+
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
   </script>
 </html>
