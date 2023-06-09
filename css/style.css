@@ -457,7 +457,7 @@ nav .container {
   section {
     height: auto !important;
 
-    padding-bottom: 20% !important;
+    padding: 1px !important;
   }
   .card,
   .box {
