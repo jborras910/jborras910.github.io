@@ -23,10 +23,12 @@
     />
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
     <style>
       body,
       .modal-content {
-        background-image: url("assets/BackgroundTip.jpg") !important;
         background-size: cover;
         background-attachment: fixed;
         background-position: center;
@@ -445,19 +447,42 @@
             </div>
           </div>
 
-          <div class="Tech_Stack text-center">
+          <div class="Tech_Stack text-center" data-aos="flip-left">
             <h2 class="line">Tech Stack</h2>
-
             <hr />
             <div class="Tech_Stack-body">
-              <i title="JavaScript" class="fa-brands fa-js"></i>
-              <i class="fa-brands fa-php"></i>
-              <i class="fa-brands fa-bootstrap"></i>
-              <i class="fa-brands fa-sass"></i>
-              <i class="fa-brands fa-react"></i>
-              <i class="fa-brands fa-laravel"></i>
-              <i class="fa-brands fa-node"></i>
-              <i class="fa-brands fa-git-alt"></i>
+              <div data-aos="fade-up">
+                <i title="JavaScript" class="fa-brands fa-js"></i>
+                <p>JavaScript</p>
+              </div>
+              <div data-aos="fade-down">
+                <i class="fa-brands fa-php"></i>
+                <p>PHP</p>
+              </div>
+              <div data-aos="fade-down">
+                <i class="fa-brands fa-bootstrap"></i>
+                <p>Bootstrap</p>
+              </div>
+              <div data-aos="fade-up">
+                <i class="fa-brands fa-sass"></i>
+                <p>Sass</p>
+              </div>
+              <div data-aos="fade-up">
+                <i class="fa-brands fa-react"></i>
+                <p>React Js</p>
+              </div>
+              <div data-aos="fade-down">
+                <i class="fa-brands fa-laravel"></i>
+                <p>Laravel</p>
+              </div>
+              <div data-aos="fade-up">
+                <i class="fa-brands fa-node"></i>
+                <p>Node</p>
+              </div>
+              <div data-aos="fade-dwon">
+                <i class="fa-brands fa-git-alt"></i>
+                <p>Git</p>
+              </div>
             </div>
           </div>
         </div>
@@ -634,29 +659,33 @@
             <div class="row">
               <div class="col-md-4">
                 <div class="form-group">
-                  <input type="text" placeholder="First Name..." />
+                  <input type="text" placeholder="&#xf007;  First Name..." />
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="form-group">
-                  <input type="text" placeholder="Last Name..." />
+                  <input type="text" placeholder="&#xf007;  Last Name..." />
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="form-group">
-                  <input type="text" placeholder="Middle Name..." />
+                  <input type="text" placeholder="&#xf007;  Middle Name..." />
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="form-group">
-                  <input type="email" id="email" placeholder="Email..." />
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="&#xf0e0;  Email..."
+                  />
                 </div>
               </div>
 
               <div class="col-md-12">
                 <div class="form-group">
                   <textarea
-                    placeholder="Message..."
+                    placeholder="&#xf27a;  Message..."
                     class=""
                     name=""
                     id=""
