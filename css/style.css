@@ -175,6 +175,7 @@ nav .container {
 .home .container {
   margin-top: 12% !important;
 }
+
 .about .container {
   margin: 14% auto !important;
 }
@@ -211,6 +212,7 @@ nav .container {
 
 .home .Tech_Stack-body i {
   cursor: pointer;
+
   font-size: 55px;
   transition: transform 0.3s ease-in-out;
 }
@@ -532,5 +534,9 @@ nav .container {
   }
   .contact form {
     width: 100% !important;
+  }
+
+  .works .card:hover {
+    box-shadow: none !important;
   }
 }
