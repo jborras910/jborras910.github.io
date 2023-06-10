@@ -86,12 +86,6 @@
 html {
   scroll-behavior: smooth;
 }
-body {
-  background-image: url("assets/BackgroundTip.jpg") !important;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-}
 
 .home,
 .contact {
@@ -528,12 +522,9 @@ nav .container {
   .home .Tech_Stack-body div {
     padding: 20px !important;
     border: none !important;
-    border-bottom: 2px solid #222831 !important;
-    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2) !important;
-    margin: 12px !important;
   }
   .home .Tech_Stack i {
-    font-size: 40px !important;
+    font-size: 60px !important;
   }
   .contact form {
     width: 100% !important;
