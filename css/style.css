@@ -189,7 +189,8 @@ nav .container {
 }
 
 .projects .container {
-  margin: 7% auto !important;
+  margin-top: 7% !important;
+  margin-bottom: 12% !important;
 }
 
 .home img {
@@ -326,7 +327,7 @@ nav .container {
 }
 .works .card:hover {
   box-shadow: #00adb5 0px 10px 36px, #00adb5 0px 20px 40px !important;
-  transition: 0.9s !important;
+  transition: 0.2s !important;
   transform: translateY(-10px);
 }
 .works .card .btn {
@@ -538,5 +539,6 @@ nav .container {
 
   .works .card:hover {
     box-shadow: none !important;
+    transform: none !important;
   }
 }
