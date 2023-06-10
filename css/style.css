@@ -115,6 +115,22 @@ nav {
   background-position: center;
 }
 
+.resume {
+  -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  font-weight: 700 !important;
+  background-color: #00adb5 !important;
+  color: #eeeeee !important;
+
+  box-shadow: #00adb5 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px,
+    rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px,
+    rgba(0, 0, 0, 0.07) 0px 32px 64px;
+
+  padding: 10px 30px !important;
+  text-decoration: none !important;
+}
+
 .navbar-nav .nav-link.active {
   color: #00adb5 !important;
   border-bottom: 2px solid #00adb5 !important;
@@ -154,20 +170,6 @@ nav .container {
   color: #eeeeee !important;
 }
 
-.resume {
-  -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    both;
-  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-
-  background-color: #00adb5 !important;
-  color: #eeeeee !important;
-  padding-left: 20px !important;
-  padding-right: 20px !important;
-  width: 100% !important;
-  box-shadow: #00adb5 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px,
-    rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px,
-    rgba(0, 0, 0, 0.07) 0px 32px 64px;
-}
 .home {
   padding: 20px !important;
   font-weight: 600;
