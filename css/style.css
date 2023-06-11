@@ -288,7 +288,8 @@ nav .container {
 }
 
 .about img {
-  padding: 10px !important;
+  padding: 15px !important;
+  border-radius: 10px 100px / 120px;
   width: 100% !important;
   box-shadow: #00adb5 0px 4px 16px, #00adb5 0px 10px 10px !important;
 }
