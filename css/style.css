@@ -231,7 +231,7 @@ nav .container {
   text-transform: uppercase;
 
   font-weight: bold;
-  text-shadow: 2px 1px #222831;
+  text-shadow: 2px 2px #222831;
 }
 
 .home .btn {
@@ -283,6 +283,12 @@ nav .container {
     rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px,
     rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
+
+.btn:hover {
+  transition: 0.5s !important;
+  border-radius: 10px 100px / 120px;
+}
+
 .about .modal {
   color: black !important;
 }
@@ -414,8 +420,10 @@ nav .container {
 }
 
 .contact .contact-header {
-  margin-bottom: 6% !important;
+  margin: 10px auto !important;
   color: #222831 !important;
+  font-weight: 600;
+  width: 90% !important;
 }
 .contact .contact-header span {
   color: #0072b1 !important;
@@ -423,30 +431,31 @@ nav .container {
 .contact form {
   margin: 5px auto !important;
   padding: 10px !important;
-  width: 100% !important;
+  width: 90% !important;
 }
 
 .contact form .btn {
   background-color: #00adb5 !important;
   color: #eeeeee !important;
   padding: 12px !important;
-
+  margin: 15px auto !important;
   width: 100% !important;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 .form-group input,
 .form-group textarea {
   outline: 0px !important;
   font-family: Arial, FontAwesome;
   width: 100% !important;
-  padding: 15px !important;
+  padding: 13px !important;
   font-weight: 600;
   border: none !important;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 5px !important;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 }
 .footer {
   background-image: url("../assets/bg-dark.gif") !important;
