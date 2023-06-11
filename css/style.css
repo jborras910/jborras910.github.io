@@ -289,7 +289,7 @@ nav .container {
 
 .about img {
   padding: 15px !important;
-  border-radius: 10px 100px / 120px;
+  border-radius: 50% 20% / 10% 40%;
   width: 100% !important;
   box-shadow: #00adb5 0px 4px 16px, #00adb5 0px 10px 10px !important;
 }
@@ -501,7 +501,9 @@ nav .container {
   }
 
   .about img {
-    margin-bottom: 10px !important;
+    margin-bottom: 15px !important;
+    border-radius: 0px !important;
+    box-shadow: #00adb5 0px 4px 14px, #00adb5 0px 5px 5px !important;
   }
   .about .btn {
     width: 100% !important;
