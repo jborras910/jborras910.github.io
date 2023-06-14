@@ -349,11 +349,14 @@ nav .container {
 
 .works i {
   font-weight: 600;
-  color: #00adb5 !important;
-  font-size: 100px !important;
+  background-color: #ba1a27 !important;
+  color: white !important;
+  font-size: 70px !important;
+  border: 2px solid #e63946;
+  border-radius: 50% !important;
 
   margin: 20px auto !important;
-  padding: 10px !important;
+  padding: 30px !important;
 }
 .works .modal {
   color: #222831 !important;
