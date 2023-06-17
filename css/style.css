@@ -83,6 +83,18 @@
   }
 }
 
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -218,10 +230,7 @@ nav .container {
 }
 
 .home .Tech_Stack-body div:hover {
-  box-shadow: #00adb5 0px 4px 16px, #00adb5 0px 10px 10px;
-  transform: translateY(-5px);
-
-  border: 2px solid #00adb5;
+  animation: pulse 1s infinite;
 }
 
 .home .display-5 {
