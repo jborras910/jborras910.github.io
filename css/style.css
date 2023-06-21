@@ -436,7 +436,7 @@ nav .container {
   width: 90% !important;
 }
 .contact .contact-header span {
-  color: #0072b1 !important;
+  color: #00adb5 !important;
 }
 .contact form {
   margin: 5px auto !important;
@@ -540,6 +540,11 @@ nav .container {
   .navbar-mobile {
     display: block !important;
   }
+  .navbar-mobile #icon {
+    color: #00adb5 !important;
+    font-weight: 700 !important;
+    transition: all 0.5s ease !important;
+  }
 
   .sidebar-hidden {
     background-image: url("../assets/bg-dark.gif") !important;
@@ -594,6 +599,18 @@ nav .container {
   .home .container {
     margin-top: 35% !important;
     padding-bottom: 20% !important;
+  }
+  .about .container-fluid {
+    margin-top: 30% !important;
+  }
+  .works .container-fluid {
+    margin-top: 25% !important;
+  }
+  .projects .container-fluid {
+    margin-top: 25% !important;
+  }
+  .contact .container-fluid {
+    margin-top: 28% !important;
   }
 
   .about img {
