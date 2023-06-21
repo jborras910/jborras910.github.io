@@ -378,7 +378,74 @@
       </div>
     </div>
 
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-mobile">
+      <div class="container">
+        <a class="navbar-brand" href="#"><span>JB</span>orras<span></span></a>
+        <button
+          onclick="mobileMenuToggleNav()"
+          class="navbar-toggler"
+          type="button"
+        >
+          <span class="fa-solid fa-bars" id="icon"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+      <div class="container mt-5">
+        <a class="sidebar-link" onclick="mobileMenuToggleNav()" href="#home"
+          >Home</a
+        >
+        <a class="sidebar-link" onclick="mobileMenuToggleNav()" href="#about"
+          >About</a
+        >
+        <a class="sidebar-link" onclick="mobileMenuToggleNav()" href="#works"
+          >Services</a
+        >
+        <a class="sidebar-link" onclick="mobileMenuToggleNav()" href="#projects"
+          >Projects</a
+        >
+        <a class="sidebar-link" onclick="mobileMenuToggleNav()" href="#contact"
+          >Contact</a
+        >
+        <a
+          class="btn-block resume"
+          href="assets/Jeferson Borras Resume.pdf"
+          download="Resume.pdf"
+          target="_blank"
+          onclick="mobileMenuToggleNav()"
+        >
+          <i class="fa-solid fa-download mr-2"></i>Resume
+        </a>
+
+        <a
+          class="fb btn"
+          href="https://www.facebook.com/Jborras910"
+          target="_blank"
+          onclick="mobileMenuToggleNav()"
+          ><i class="fa-brands fa-square-facebook mr-2"></i>Facebook</a
+        >
+
+        <a
+          class="Linkedin btn"
+          href="https://www.linkedin.com/in/jeferson-borras-818a661b0/"
+          target="_blank"
+          onclick="mobileMenuToggleNav()"
+          ><i class="fa-brands fa-linkedin mr-2"></i>Linkedin</a
+        >
+
+        <a
+          class="yt btn"
+          href="https://www.youtube.com/channel/UCFjiM8oqDLsOJjXKZWkZyvQ"
+          target="_blank"
+          onclick="mobileMenuToggleNav()"
+          ><i class="fa-brands fa-youtube mr-2"></i>Youtube</a
+        >
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top nav-desktop">
       <div class="container">
         <a class="navbar-brand" href="#"><span> JB</span>orras<span></span></a>
         <button
@@ -656,7 +723,7 @@
               data-aos-duration="1000"
             >
               <div class="box">
-                <img src="assets/queueing_system_project.png" alt="" />
+                <img src="assets/queueing system.png" alt="" />
                 <div class="box-body p-3">
                   <h6>
                     Web Application Queueing System for Technological Institute
@@ -797,24 +864,9 @@
   </script>
 
   <script>
-    const toggleMenu = document.getElementById("toggleMenu");
-
-    toggleMenu.addEventListener("click", function () {
-      let icon = document.getElementById("icon");
-
-      if (icon.className === "fa-solid fa-bars") {
-        icon.classList.add("fa-xmark");
-        icon.classList.remove("fa-bars");
-      } else {
-        icon.classList.remove("fa-xmark");
-        icon.classList.add("fa-bars");
-      }
-    });
-  </script>
-
-  <script>
     // Get all the navigation links
     const navLinks = document.querySelectorAll(".nav-link");
+    const sidebarLinks = document.querySelectorAll(".sidebar-link");
 
     // Function to check which section is currently in view
     function checkSectionInView() {
@@ -827,11 +879,18 @@
           navLinks.forEach((link) => {
             link.classList.remove("active");
           });
+          sidebarLinks.forEach((link) => {
+            link.classList.remove("active");
+          });
           // Find the corresponding navigation link and add the active class
           const currentNavLink = document.querySelector(
-            `a[href="#${section.id}"]`
+            `.navbar-nav .nav-link[href="#${section.id}"]`
+          );
+          const currentSidebarLink = document.querySelector(
+            `.sidebar-link[href="#${section.id}"]`
           );
           currentNavLink.classList.add("active");
+          currentSidebarLink.classList.add("active");
         }
       });
     }
@@ -862,6 +921,16 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"
   ></script>
+
+  <script>
+    function mobileMenuToggleNav() {
+      var sidebar = document.getElementById("sidebar");
+      sidebar.classList.toggle("sidebar-hidden");
+
+      var icon = document.getElementById("icon");
+      icon.classList.toggle("fa-times");
+    }
+  </script>
 
   <!-- Auto Typing -->
 
