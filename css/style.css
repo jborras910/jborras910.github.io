@@ -1,85 +1,25 @@
-@-webkit-keyframes tracking-in-contract {
+@keyframes right {
   0% {
-    letter-spacing: 1em;
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
+    right: -1000px;
   }
   100% {
-    letter-spacing: normal;
-    opacity: 1;
+    right: 0;
   }
 }
-@keyframes tracking-in-contract {
+@keyframes left {
   0% {
-    letter-spacing: 1em;
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
+    left: -1000px;
   }
   100% {
-    letter-spacing: normal;
-    opacity: 1;
+    left: 0;
   }
 }
-
-@-webkit-keyframes slide-in-right {
+@keyframes top {
   0% {
-    -webkit-transform: translateX(1000px);
-    transform: translateX(1000px);
-    opacity: 0;
+    top: -1000px;
   }
   100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@keyframes slide-in-right {
-  0% {
-    -webkit-transform: translateX(1000px);
-    transform: translateX(1000px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes scale-in-ver-top {
-  0% {
-    -webkit-transform: scaleY(0);
-    transform: scaleY(0);
-    -webkit-transform-origin: 100% 0%;
-    transform-origin: 100% 0%;
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scaleY(1);
-    transform: scaleY(1);
-    -webkit-transform-origin: 100% 0%;
-    transform-origin: 100% 0%;
-    opacity: 1;
-  }
-}
-@keyframes scale-in-ver-top {
-  0% {
-    -webkit-transform: scaleY(0);
-    transform: scaleY(0);
-    -webkit-transform-origin: 100% 0%;
-    transform-origin: 100% 0%;
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: scaleY(1);
-    transform: scaleY(1);
-    -webkit-transform-origin: 100% 0%;
-    transform-origin: 100% 0%;
-    opacity: 1;
+    top: 0;
   }
 }
 
@@ -122,9 +62,6 @@ nav {
 }
 
 .resume {
-  -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    both;
-  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   font-weight: 700 !important;
   background-color: #00adb5 !important;
   color: #eeeeee !important;
@@ -137,6 +74,19 @@ nav {
   text-decoration: none !important;
 }
 
+.navbar-nav-1 {
+  position: relative;
+  animation-name: top;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.navbar-nav-2 {
+  position: relative;
+  animation-name: right;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
 .navbar-nav .nav-link.active {
   color: #00adb5 !important;
   border-bottom: 2px solid #00adb5 !important;
@@ -147,17 +97,17 @@ nav {
 }
 
 .navbar-brand {
-  -webkit-animation: tracking-in-contract 0.8s
-    cubic-bezier(0.215, 0.61, 0.355, 1) both;
-  animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  position: relative;
+  animation-name: left;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
   color: #eeeeee !important;
   font-family: "Montserrat", sans-serif !important;
-
   text-transform: uppercase;
-
   font-weight: bold;
   text-shadow: 1px 1px #00adb5;
 }
+
 .navbar-brand span {
   color: #00adb5 !important;
 }
@@ -166,12 +116,10 @@ nav .container {
   padding: 25px !important;
 }
 .nav-item {
-  -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
-    both;
-  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   margin-left: 15px !important;
   font-weight: 600;
 }
+
 .nav-item .nav-link {
   color: #eeeeee !important;
 }
@@ -209,6 +157,17 @@ nav .container {
 }
 .Tech_Stack {
   margin-top: 10% !important;
+}
+.Tech_Stack h2 {
+  font-family: "Montserrat", sans-serif !important;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px #00adb5;
+}
+.Tech_Stack h2 span {
+  color: #00adb5 !important;
+
+  text-shadow: 1px 1px black;
 }
 
 .home .Tech_Stack-body {
@@ -604,6 +563,7 @@ nav .container {
     margin-top: 35% !important;
     padding-bottom: 20% !important;
   }
+
   .about .container-fluid {
     margin-top: 30% !important;
   }
