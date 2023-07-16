@@ -50,16 +50,37 @@ section {
   padding: 20px !important;
 }
 
-nav {
+.fixed-nav {
   border-bottom: 2px solid rgba(22, 22, 26, 0.18);
   box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2) !important;
   width: 100% !important;
   z-index: 1 !important;
+  background-color: black !important;
   background-image: url("../assets/bg-dark.gif") !important;
   background-size: cover !important;
   background-attachment: fixed !important;
   background-position: center;
 }
+
+/* .fixed-nav .navbar-nav .nav-link {
+  color: black !important;
+}
+
+.fixed-nav .navbar-brand {
+  color: black !important;
+}
+
+.scroll-nav {
+  border-bottom: 2px solid rgba(22, 22, 26, 0.18);
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2) !important;
+  width: 100% !important;
+  z-index: 1 !important;
+  background-color: black !important;
+  background-image: url("../assets/bg-dark.gif") !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  background-position: center;
+} */
 
 .resume {
   font-weight: 700 !important;
@@ -437,6 +458,15 @@ nav .container {
 
 .navbar-mobile {
   display: none !important;
+  border-bottom: 2px solid rgba(22, 22, 26, 0.18);
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2) !important;
+  width: 100% !important;
+  z-index: 1 !important;
+  background-color: black !important;
+  background-image: url("../assets/bg-dark.gif") !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  background-position: center;
 }
 
 .sidebar {

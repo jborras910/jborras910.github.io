@@ -35,9 +35,11 @@
         background-attachment: fixed;
         background-position: center;
       }
+
       .modal {
         font-weight: 600 !important;
       }
+
       .modal .btn {
         background-color: #00adb5 !important;
         color: #eeeeee !important;
@@ -48,6 +50,7 @@
           rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px,
           rgba(0, 0, 0, 0.07) 0px 32px 64px;
       }
+
       .btn {
         font-weight: 600 !important;
         border: none !important;
@@ -445,7 +448,10 @@
       </div>
     </div>
 
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top nav-desktop">
+    <nav
+      id="navbar"
+      class="navbar navbar-expand-lg navbar-light fixed-top nav-desktop fixed-nav"
+    >
       <div class="container">
         <a class="navbar-brand" href="#"><span> JB</span>orras<span></span></a>
         <button
@@ -620,7 +626,7 @@
               data-aos="fade-right"
               data-aos-duration="1000"
             >
-              <img src="assets/ID_PIC.jpg" alt="" />
+              <img src="assets/toga.jpg" alt="" />
             </div>
 
             <div
@@ -798,31 +804,45 @@
               projects and ideas.
             </p>
           </div>
+          <script src="https://smtpjs.com/v3/smtp.js"></script>
           <form
+            onsubmit="submitEmail()"
             class="text-left"
-            onsubmit="sendEmail(); reset(); return false;"
             data-aos="zoom-in"
             data-aos-duration="1000"
           >
             <div class="row">
               <div class="col-md-4">
                 <div class="form-group">
-                  <input type="text" placeholder="&#xf007;  First Name..." />
+                  <input
+                    type="text"
+                    name="first_name"
+                    placeholder="&#xf007;  First Name..."
+                  />
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="form-group">
-                  <input type="text" placeholder="&#xf007;  Last Name..." />
+                  <input
+                    name="last_name"
+                    type="text"
+                    placeholder="&#xf007;  Last Name..."
+                  />
                 </div>
               </div>
               <div class="col-md-4">
                 <div class="form-group">
-                  <input type="text" placeholder="&#xf007;  Middle Name..." />
+                  <input
+                    type="text"
+                    name="middle_name"
+                    placeholder="&#xf007;  Middle Name..."
+                  />
                 </div>
               </div>
               <div class="col-md-12">
                 <div class="form-group">
                   <input
+                    name="email"
                     type="email"
                     id="email"
                     placeholder="&#xf0e0;  Email..."
@@ -833,6 +853,7 @@
               <div class="col-md-12">
                 <div class="form-group">
                   <textarea
+                    name="message"
                     placeholder="&#xf27a;  Write Here your message..."
                     class=""
                     name=""
@@ -840,13 +861,37 @@
                     cols="30"
                     rows="10"
                   ></textarea>
-                  <button type="submit" class="btn btn-primary btn-block mt-2">
+                  <button
+                    type="submit"
+                    name="send_email"
+                    class="btn btn-primary btn-block mt-2"
+                  >
                     Send Message
                   </button>
                 </div>
               </div>
             </div>
           </form>
+
+          <script>
+            const submitEmail = () => {
+              Email.send({
+                Host: "smtp.gmail.com",
+                Username: "jborras910@gmail.com",
+                Password: "gathrquaabwitxdb",
+                To: "jborras910@gmail.com",
+                From: "jborras910@gmail.com",
+                Subject: "Email Subject",
+                Body: "Email Content",
+              })
+                .then(function (message) {
+                  alert("Email sent successfully!");
+                })
+                .catch(function (error) {
+                  console.error("Error occurred:", error.message);
+                });
+            };
+          </script>
         </div>
       </div>
     </section>
@@ -856,32 +901,6 @@
         <h6>Copyright © by jborras | All Rights Reserved</h6>
       </div>
     </div>
-
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-
-    <script>
-      function sendEmail() {
-        const email = document.getElementById("email").value;
-
-        Email.send({
-          Host: "smtp.gmail.com",
-          Username: "jborras910@gmail.com",
-          Password: "gathrquaabwitxdb",
-          To: "jborras910@gmail.com",
-          From: email,
-          Subject: "Hello from JavaScript",
-          Body: "This is the body of the email",
-        })
-          .then(function (message) {
-            alert("Email sent successfully");
-            console.log(message);
-          })
-          .catch(function (error) {
-            alert("Error sending email");
-            console.log(error);
-          });
-      }
-    </script>
   </body>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -927,7 +946,9 @@
 
   <script>
     $(document).ready(function () {
-      $("body").scrollspy({ target: "#navbarNav" });
+      $("body").scrollspy({
+        target: "#navbarNav",
+      });
     });
   </script>
 
@@ -997,6 +1018,20 @@
       document.documentElement.scrollTop = 0;
     }
   </script>
+
+  <!-- <script>
+    var navbar = document.getElementById("navbar");
+
+    window.addEventListener("scroll", function () {
+      if (window.pageYOffset === 0) {
+        navbar.classList.add("fixed-nav");
+        navbar.classList.remove("scroll-nav");
+      } else {
+        navbar.classList.remove("fixed-nav");
+        navbar.classList.add("scroll-nav");
+      }
+    });
+  </script> -->
 
   <script src="script/particles.js"></script>
   <script src="script/app.js"></script>
