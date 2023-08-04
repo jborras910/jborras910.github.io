@@ -51,7 +51,7 @@
           rgba(0, 0, 0, 0.07) 0px 32px 64px;
       }
 
-      .btn {
+      .modal .btn {
         font-weight: 600 !important;
         border: none !important;
       }
@@ -423,7 +423,7 @@
         </a>
 
         <a
-          class="fb btn"
+          class="fb-nav btn"
           href="https://www.facebook.com/Jborras910"
           target="_blank"
           onclick="mobileMenuToggleNav()"
@@ -431,7 +431,7 @@
         >
 
         <a
-          class="Linkedin btn"
+          class="Linkedin-nav btn"
           href="https://www.linkedin.com/in/jeferson-borras-818a661b0/"
           target="_blank"
           onclick="mobileMenuToggleNav()"
@@ -439,7 +439,7 @@
         >
 
         <a
-          class="yt btn"
+          class="youtube-nav btn"
           href="https://www.youtube.com/channel/UCFjiM8oqDLsOJjXKZWkZyvQ"
           target="_blank"
           onclick="mobileMenuToggleNav()"
@@ -539,13 +539,22 @@
               </p>
 
               <a
+                href="#about"
+                data-aos="fade-down"
+                data-aos-duration="1000"
+                class="btn btn-primary about_me"
+              >
+                About Me<i class="fa-solid fa-angles-down ml-2"></i>
+              </a>
+
+              <a
                 data-aos="fade-left"
                 data-aos-duration="1000"
                 class="fb btn"
                 href="https://www.facebook.com/Jborras910"
                 target="_blank"
-                ><i class="fa-brands fa-facebook mr-2"></i>Facebook</a
-              >
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
 
               <a
                 data-aos="fade-right"
@@ -553,8 +562,35 @@
                 class="Linkedin btn"
                 href="https://www.linkedin.com/in/jeferson-borras-818a661b0/"
                 target="_blank"
-                ><i class="fa-brands fa-linkedin mr-2"></i>Linkedin</a
-              >
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+
+              <a
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                class="github btn"
+                href="https://github.com/jborras910"
+                target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+
+              <a
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                class="youtube btn"
+                href="#"
+                target="_blank"
+                ><i class="fa-brands fa-youtube"></i
+              ></a>
+
+              <a
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                class="discord btn"
+                href="#"
+                target="_blank"
+                ><i class="fa-brands fa-discord"></i
+              ></a>
             </div>
           </div>
 
@@ -806,8 +842,8 @@
           </div>
           <script src="https://smtpjs.com/v3/smtp.js"></script>
           <form
-            onsubmit="submitEmail()"
-            class="text-left"
+            id="myForm"
+            class="text-left form"
             data-aos="zoom-in"
             data-aos-duration="1000"
           >
@@ -864,7 +900,7 @@
                   <button
                     type="submit"
                     name="send_email"
-                    class="btn btn-primary btn-block mt-2"
+                    class="btn btn-primary mt-1 form_submit"
                   >
                     Send Message
                   </button>
@@ -874,24 +910,19 @@
           </form>
 
           <script>
-            const submitEmail = () => {
-              Email.send({
-                Host: "smtp.gmail.com",
-                Username: "jborras910@gmail.com",
-                Password: "gathrquaabwitxdb",
-                To: "jborras910@gmail.com",
-                From: "jborras910@gmail.com",
-                Subject: "Email Subject",
-                Body: "Email Content",
-              })
-                .then(function (message) {
-                  alert("Email sent successfully!");
-                })
-                .catch(function (error) {
-                  console.error("Error occurred:", error.message);
-                });
-            };
+            const form = document.getElementById("myForm");
+
+            form.addEventListener("submit", function (event) {
+              event.preventDefault();
+              swal({
+                title: "Error!",
+                text: "Invalid Email, Please Insert the proper email. An email address is a crucial piece of information required for communication, so we want to ensure that the email you provide is accurate and valid. If you encounter this error message, it means that the email address you entered does not meet the necessary format for a valid email address.",
+                icon: "error",
+                button: "Close",
+              });
+            });
           </script>
+          <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         </div>
       </div>
     </section>
