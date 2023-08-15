@@ -41,6 +41,9 @@ html {
 body {
   background-image: linear-gradient(to right, #222831 50%, #00adb5 50%);
 }
+.about {
+  background-color: #393e46 !important;
+}
 
 .home,
 .contact {
@@ -98,11 +101,11 @@ section {
   box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2) !important;
   width: 100% !important;
   z-index: 1 !important;
-  background-color: black !important;
-  background-image: url("../assets/bg-dark.gif") !important;
+  background-color: #393e46 !important;
+  /* background-image: url("../assets/bg-dark.gif") !important;
   background-size: cover !important;
   background-attachment: fixed !important;
-  background-position: center;
+  background-position: center; */
 }
 .fixed-nav-black {
   background-color: white !important;
@@ -305,10 +308,11 @@ nav .container {
   color: #7289da !important;
 }
 .about {
-  background-image: url("../assets/bg-dark.gif") !important;
+  /* background-image: url("../assets/bg-dark.gif") !important;
   background-size: cover !important;
   background-attachment: fixed !important;
-  background-position: center;
+  background-position: center; */
+  background-color: #393e46 !important;
 
   color: #eeeeee !important;
   font-weight: 600;
@@ -369,10 +373,11 @@ nav .container {
   cursor: pointer;
   width: 100%;
   padding: 15px;
-  background-image: url("../assets/bg-dark.gif") !important;
+  /* background-image: url("../assets/bg-dark.gif") !important;
   background-size: cover !important;
   background-attachment: fixed !important;
-  background-position: center;
+  background-position: center; */
+  background-color: #393e46 !important;
   color: #eeeeee;
   border-radius: 10px;
   box-shadow: 0 4px 16px rgba(17, 17, 26, 0.1),
@@ -386,7 +391,7 @@ nav .container {
 .works .card .btn {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #e63946;
+  background-color: #00adb5;
   color: #eeeeee;
   border: none;
   border-radius: 5px;
@@ -394,7 +399,7 @@ nav .container {
   outline: none !important;
 }
 .works .card .btn:hover {
-  background-color: #ba1a27 !important;
+  background-color: #222831 !important;
 }
 
 .works i {
@@ -412,11 +417,12 @@ nav .container {
 }
 
 .projects {
-  background-image: url("../assets/bg-dark.gif") !important;
+  /* background-image: url("../assets/bg-dark.gif") !important;
 
   background-size: cover !important;
   background-attachment: fixed !important;
-  background-position: center;
+  background-position: center; */
+  background-color: #393e46 !important;
   color: #eeeeee !important;
 }
 .projects h1 {
@@ -451,7 +457,7 @@ nav .container {
 .projects .box .btn {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #e63946;
+  background-color: #00adb5;
   color: #eeeeee;
   border: none;
   border-radius: 5px;
@@ -462,7 +468,7 @@ nav .container {
 }
 
 .projects .box .btn:hover {
-  background-color: #ba1a27;
+  background-color: #222831;
 }
 
 .contact {
@@ -527,11 +533,12 @@ nav .container {
   box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2) !important;
   width: 100% !important;
   z-index: 1 !important;
-  background-color: black !important;
+  background-color: #393e46 !important;
+  /* background-color: black !important;
   background-image: url("../assets/bg-dark.gif") !important;
   background-size: cover !important;
   background-attachment: fixed !important;
-  background-position: center;
+  background-position: center; */
 }
 
 .sidebar {
@@ -544,7 +551,7 @@ nav .container {
   left: -100%;
   transition: all 0.5s ease;
   z-index: 9999 !important;
-  background-color: black !important;
+  background-color: #222831 !important;
 }
 
 .sidebar a {
@@ -590,24 +597,31 @@ nav .container {
 }
 
 @media screen and (max-width: 700px) {
+  body {
+    background-image: linear-gradient(to right, #222831 100%, #00adb5 0%);
+  }
   .nav-desktop {
     display: none !important;
   }
   .navbar-mobile {
     display: block !important;
+    background-color: #393e46 !important;
   }
   .navbar-mobile #icon {
     color: #00adb5 !important;
     font-weight: 700 !important;
     transition: all 0.5s ease !important;
   }
+  .contact form .btn {
+    background-color: #00adb5 !important;
+  }
 
   .sidebar-hidden {
-    background-image: url("../assets/bg-dark.gif") !important;
+    /* background-image: url("../assets/bg-dark.gif") !important;
     background-size: cover !important;
     background-attachment: fixed !important;
-    background-position: center;
-    background-color: black !important;
+    background-position: center; */
+    background-color: #393e46 !important;
     display: block !important;
     top: 77px !important;
     left: 0% !important;
