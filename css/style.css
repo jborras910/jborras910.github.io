@@ -39,7 +39,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-image: linear-gradient(to right, #22283113 100%, #00acb52c 0%);
+  background-image: linear-gradient(to right, #393e46c5 50%, #222831 50%);
 }
 
 .home,
@@ -164,9 +164,10 @@ nav .container {
 .home {
   padding: 20px !important;
   font-weight: 600;
+  color: #eeeeee !important;
 }
 .home .container {
-  margin-top: 11% !important;
+  margin-top: 12% !important;
 }
 /* .color-black {
   top: 110px;
@@ -265,12 +266,12 @@ nav .container {
   margin-top: 2px !important;
   font-weight: 600;
   font-size: 15px !important;
-  border: 2px solid #00adb5 !important;
+  background-color: #eeeeee !important;
 }
 
 .home .btn:hover {
   background-color: #00adb5 !important;
-  color: white !important;
+  color: #eeeeee !important;
   transition: 0.2s;
   transform: translateY(-10px);
 }
@@ -352,11 +353,12 @@ nav .container {
 
   font-weight: bold;
 
-  color: #222831 !important;
+  color: #eeeeee !important;
 }
 .works-header {
   font-weight: 600;
   margin-bottom: 2% !important;
+  color: #eeeeee !important;
 }
 .works-header p {
   font-weight: 600 !important;
@@ -469,7 +471,7 @@ nav .container {
 
 .contact .contact-header {
   margin: 10px auto !important;
-  color: #222831 !important;
+  color: #eeeeee !important;
   font-weight: 600;
   width: 90% !important;
 }
@@ -484,7 +486,7 @@ nav .container {
 
 .contact form .btn {
   border: none !important;
-  background-color: #00adb5 !important;
+  background-color: #222831 !important;
   color: #fff !important;
   padding: 12px !important;
   margin: 15px auto !important;
