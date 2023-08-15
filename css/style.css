@@ -39,7 +39,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-image: linear-gradient(to right, #393e46c5 50%, #222831 50%);
+  background-image: linear-gradient(to right, #222831 50%, #00adb5 50%);
 }
 
 .home,
@@ -167,7 +167,7 @@ nav .container {
   color: #eeeeee !important;
 }
 .home .container {
-  margin-top: 12% !important;
+  margin-top: 13% !important;
 }
 /* .color-black {
   top: 110px;
@@ -224,7 +224,7 @@ nav .container {
   text-shadow: 1px 1px #00adb5;
 }
 .Tech_Stack h2 span {
-  color: #00adb5 !important;
+  color: #222831 !important;
 
   text-shadow: 1px 1px black;
 }
@@ -266,6 +266,7 @@ nav .container {
   margin-top: 2px !important;
   font-weight: 600;
   font-size: 15px !important;
+  border: none;
   background-color: #eeeeee !important;
 }
 
@@ -476,7 +477,7 @@ nav .container {
   width: 90% !important;
 }
 .contact .contact-header span {
-  color: #00adb5 !important;
+  color: #222831 !important;
 }
 .contact form {
   margin: 5px auto !important;
