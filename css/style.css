@@ -38,6 +38,9 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  background-image: linear-gradient(to right, #22283113 100%, #00acb52c 0%);
+}
 
 .home,
 .contact {
@@ -49,38 +52,11 @@ section {
 
   padding: 20px !important;
 }
-
-.fixed-nav {
-  border-bottom: 2px solid rgba(22, 22, 26, 0.18);
-  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2) !important;
-  width: 100% !important;
-  z-index: 1 !important;
-  background-color: black !important;
-  background-image: url("../assets/bg-dark.gif") !important;
-  background-size: cover !important;
-  background-attachment: fixed !important;
-  background-position: center;
+.navbar {
+  /* Animation */
+  transition-timing-function: ease-in !important;
+  transition: all 0.5s !important;
 }
-
-/* .fixed-nav .navbar-nav .nav-link {
-  color: black !important;
-}
-
-.fixed-nav .navbar-brand {
-  color: black !important;
-}
-
-.scroll-nav {
-  border-bottom: 2px solid rgba(22, 22, 26, 0.18);
-  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2) !important;
-  width: 100% !important;
-  z-index: 1 !important;
-  background-color: black !important;
-  background-image: url("../assets/bg-dark.gif") !important;
-  background-size: cover !important;
-  background-attachment: fixed !important;
-  background-position: center;
-} */
 
 .resume {
   font-weight: 700 !important;
@@ -117,6 +93,46 @@ section {
   transition: 0.9s !important;
 }
 
+.fixed-nav {
+  border-bottom: 2px solid rgba(22, 22, 26, 0.18);
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2) !important;
+  width: 100% !important;
+  z-index: 1 !important;
+  background-color: black !important;
+  background-image: url("../assets/bg-dark.gif") !important;
+  background-size: cover !important;
+  background-attachment: fixed !important;
+  background-position: center;
+}
+.fixed-nav-black {
+  background-color: white !important;
+  border-bottom: 2px solid rgba(22, 22, 26, 0.18);
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2) !important;
+  width: 100% !important;
+  z-index: 1 !important;
+  padding: 5px !important;
+}
+
+.fixed-nav-black .navbar-brand {
+  position: relative;
+  animation-name: left;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  color: grey !important;
+  font-family: "Montserrat", sans-serif !important;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px #00adb5;
+}
+.fixed-nav-black .nav-item .nav-link {
+  color: grey !important;
+  font-weight: 700 !important;
+}
+
+.fixed-nav-black .navbar-nav .nav-link.active {
+  color: #00adb5 !important;
+  border-bottom: 2px solid #00adb5 !important;
+}
 .navbar-brand {
   position: relative;
   animation-name: left;
@@ -150,8 +166,29 @@ nav .container {
   font-weight: 600;
 }
 .home .container {
-  margin-top: 12% !important;
+  margin-top: 11% !important;
 }
+/* .color-black {
+  top: 110px;
+  background-color: #40f8ff;
+  position: absolute;
+  height: 990px !important;
+  width: 50% !important;
+  right: 2px;
+  bottom: 0;
+}
+.color-white {
+  top: 110px;
+
+  background-color: #0c356a !important;
+
+  position: absolute;
+  height: 990px !important;
+
+  width: 50% !important;
+  left: 2px;
+  bottom: 0px !important;
+} */
 
 .about .container {
   margin: 14% auto !important;
@@ -173,7 +210,7 @@ nav .container {
 .home img {
   cursor: pointer;
   border-radius: 50%;
-
+  padding: 10px;
   width: 100% !important;
 }
 .Tech_Stack {

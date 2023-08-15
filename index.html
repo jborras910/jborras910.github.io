@@ -450,10 +450,10 @@
 
     <nav
       id="navbar"
-      class="navbar navbar-expand-lg navbar-light fixed-top nav-desktop fixed-nav"
+      class="navbar navbar-expand-lg navbar-light fixed-top fixed-nav-black nav-desktop"
     >
       <div class="container">
-        <a class="navbar-brand" href="#"><span> JB</span>orras<span></span></a>
+        <a class="navbar-brand" href="#"><span>p</span>ortfolio<span></span></a>
         <button
           id="toggleMenu"
           class="navbar-toggler"
@@ -502,7 +502,8 @@
         </div>
       </div>
     </nav>
-
+    <div class="color-black"></div>
+    <div class="color-white"></div>
     <section class="home" id="home">
       <div class="container-fluid">
         <div class="container">
@@ -1050,19 +1051,19 @@
     }
   </script>
 
-  <!-- <script>
+  <script>
     var navbar = document.getElementById("navbar");
 
     window.addEventListener("scroll", function () {
-      if (window.pageYOffset === 0) {
+      if (window.scrollY > 1000) {
+        navbar.classList.remove("fixed-nav-black");
         navbar.classList.add("fixed-nav");
-        navbar.classList.remove("scroll-nav");
       } else {
         navbar.classList.remove("fixed-nav");
-        navbar.classList.add("scroll-nav");
+        navbar.classList.add("fixed-nav-black");
       }
     });
-  </script> -->
+  </script>
 
   <script src="script/particles.js"></script>
   <script src="script/app.js"></script>
