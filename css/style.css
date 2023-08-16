@@ -153,7 +153,7 @@ section {
 }
 
 nav .container {
-  padding: 25px !important;
+  padding: 20px;
 }
 .nav-item {
   margin-left: 15px !important;
@@ -308,7 +308,7 @@ nav .container {
   color: #7289da !important;
 }
 .about {
-  /* background-image: url("../assets/bg-dark.gif") !important;
+  /* background-image: url("../assets/BackgroundTip.jpg") !important;
   background-size: cover !important;
   background-attachment: fixed !important;
   background-position: center; */
@@ -483,7 +483,7 @@ nav .container {
   width: 90% !important;
 }
 .contact .contact-header span {
-  color: #222831 !important;
+  color: #393e46 !important;
 }
 .contact form {
   margin: 5px auto !important;
@@ -544,7 +544,7 @@ nav .container {
 }
 
 .sidebar {
-  text-align: center !important;
+  text-align: left !important;
   width: 100%;
   position: fixed;
   align-items: left;
@@ -615,7 +615,7 @@ nav .container {
     transition: all 0.5s ease !important;
   }
   .contact form .btn {
-    background-color: #00adb5 !important;
+    background-color: #222831 !important;
   }
 
   .sidebar-hidden {
