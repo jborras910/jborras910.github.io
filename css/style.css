@@ -172,6 +172,9 @@ nav .container {
 .home .container {
   margin-top: 13% !important;
 }
+.home .my_name_mobile {
+  display: none;
+}
 /* .color-black {
   top: 110px;
   background-color: #40f8ff;
@@ -553,7 +556,7 @@ nav .container {
   left: -100%;
   transition: all 0.5s ease;
   z-index: 9999 !important;
-  background-color: #222831 !important;
+  background-color: #222831b1 !important;
 }
 
 .sidebar a {
@@ -602,6 +605,10 @@ nav .container {
   body {
     background-image: linear-gradient(to right, #222831 0%, #00adb5 100%);
   }
+  body p {
+    font-size: 14px !important;
+  }
+
   .nav-desktop {
     display: none !important;
   }
@@ -665,13 +672,39 @@ nav .container {
   .home {
     text-align: center !important;
   }
+  .home .about_me {
+    margin-bottom: 10px;
+  }
   .home img {
-    margin-bottom: 20px !important;
+    margin-bottom: 10px !important;
+    padding: 0px !important;
+    width: 170px !important;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   }
 
   .home .container {
-    margin-top: 35% !important;
-    padding-bottom: 20% !important;
+    margin: 35% auto !important;
+    height: auto;
+  }
+
+  .Tech_Stack {
+    display: none !important;
+  }
+
+  .its_me,
+  .my_name_desktop,
+  .Typing {
+    display: none;
+  }
+
+  .my_name_mobile {
+    display: block !important;
+    font-family: "Montserrat", sans-serif !important;
+
+    font-weight: bold;
+    text-shadow: 1px 1px #00adb5;
   }
 
   .about .container-fluid {
@@ -749,5 +782,10 @@ nav .container {
   .discord-nav {
     background-color: #7289da !important;
     color: white !important;
+  }
+  .contact input,
+  .contact textarea {
+    padding: 10px !important ;
+    font-size: 14px !important;
   }
 }
