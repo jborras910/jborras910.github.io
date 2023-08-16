@@ -384,7 +384,7 @@ nav .container {
     0 8px 32px rgba(17, 17, 26, 0.05);
 }
 .works .card:hover {
-  box-shadow: #00adb5 0px 10px 36px, #00adb5 0px 20px 40px !important;
+  box-shadow: #eeeeee 0px 10px 36px, #eeeeee 0px 20px 40px !important;
   transition: 0.2s !important;
   transform: translateY(-10px);
 }
@@ -437,7 +437,7 @@ nav .container {
 }
 .projects .box {
   cursor: pointer;
-  border: 5px solid #222831 !important;
+  border: 2px solid #222831 !important;
   margin-bottom: 30px !important;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
     rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
@@ -450,7 +450,7 @@ nav .container {
 
 .projects .box img {
   width: 100% !important;
-  border-bottom: 5px solid #222831 !important;
+  border-bottom: 2px solid #222831 !important;
   height: 290px !important;
   margin-bottom: 15px !important;
 }
@@ -493,8 +493,8 @@ nav .container {
 
 .contact form .btn {
   border: none !important;
-  background-color: #222831 !important;
-  color: #fff !important;
+  background-color: #393e46 !important;
+  color: #eeeeee !important;
   padding: 12px !important;
   margin: 15px auto !important;
   font-weight: 700 !important;
@@ -502,7 +502,8 @@ nav .container {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .contact form .btn:hover {
-  background-color: black !important;
+  background-color: #eeeeee !important;
+  color: #222831 !important;
 }
 .form-group input,
 .form-group textarea {
@@ -519,10 +520,11 @@ nav .container {
 }
 
 .footer {
-  background-image: url("../assets/bg-dark.gif") !important;
+  /* background-image: url("../assets/bg-dark.gif") !important;
   background-size: cover !important;
   background-attachment: fixed !important;
-  background-position: center;
+  background-position: center; */
+  background-color: #393e46 !important;
   color: #eeeeee !important;
   padding: 20px !important;
 }
@@ -598,7 +600,7 @@ nav .container {
 
 @media screen and (max-width: 700px) {
   body {
-    background-image: linear-gradient(to right, #222831 100%, #00adb5 0%);
+    background-image: linear-gradient(to right, #222831 0%, #00adb5 100%);
   }
   .nav-desktop {
     display: none !important;
