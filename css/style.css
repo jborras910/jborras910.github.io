@@ -223,16 +223,13 @@ nav .container {
 .Tech_Stack {
   margin-top: 10% !important;
 }
-.Tech_Stack h2 {
+.my_name_desktop {
   font-family: "Montserrat", sans-serif !important;
   text-transform: uppercase;
   font-weight: bold;
-  text-shadow: 1px 1px #00adb5;
-}
-.Tech_Stack h2 span {
-  color: #222831 !important;
-
-  text-shadow: 1px 1px black;
+  text-shadow: 1px 1px #eeeeee;
+  font-size: 50px !important;
+  color: #00adb5 !important ;
 }
 
 .home .Tech_Stack-body {
@@ -440,8 +437,10 @@ nav .container {
 }
 .projects .box {
   cursor: pointer;
-  border: 2px solid #222831 !important;
+  color: #222831 !important;
+  background-color: #eeeeee !important;
   margin-bottom: 30px !important;
+  border: 2px solid #eeeeee;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
     rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
@@ -450,28 +449,35 @@ nav .container {
   transform: translateY(-10px);
   transition: 0.8s !important;
 }
+.box-body {
+  padding: 25px !important;
+}
 
 .projects .box img {
   width: 100% !important;
-  border-bottom: 2px solid #222831 !important;
-  height: 290px !important;
-  margin-bottom: 15px !important;
+  border-bottom: 2px solid #eeeeee !important;
+  height: 300px !important;
 }
 .projects .box .btn {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #00adb5;
-  color: #eeeeee;
-  border: none;
+  padding: 10px !important;
+  font-size: 15px;
+  background-color: transparent;
+  color: #222831;
+  border: 1px solid #222831 !important;
+  width: 30%;
   border-radius: 5px;
   cursor: pointer;
   outline: none !important;
-  width: 80%;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+  font-weight: 600;
   margin: 20px auto !important;
 }
 
 .projects .box .btn:hover {
   background-color: #222831;
+  color: #eeeeee;
 }
 
 .contact {
@@ -553,7 +559,7 @@ nav .container {
   align-items: left;
   top: 77px !important;
   height: 100%;
-  left: -100%;
+  right: -100%;
   transition: all 0.5s ease;
   z-index: 9999 !important;
   background-color: #222831b1 !important;
@@ -580,17 +586,6 @@ nav .container {
   margin-left: 0px !important;
 }
 
-.sidebar .Linkedin,
-.sidebar .fb,
-.sidebar .yt,
-.sidebar .resume {
-  border-radius: 10px !important;
-  padding: 10px 30px !important;
-  font-weight: 700;
-
-  border-bottom: 2px solid rgba(22, 22, 26, 0.18);
-  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2) !important;
-}
 .yt {
   color: white !important;
 }
@@ -602,6 +597,22 @@ nav .container {
 }
 
 @media screen and (max-width: 700px) {
+  .sidebar .fb-nav,
+  .sidebar .Linkedin-nav,
+  .sidebar .youtube-nav,
+  .sidebar .resume {
+    padding: 10px !important;
+    font-weight: 700;
+    font-size: 15px !important;
+    border-bottom: 2px solid rgba(22, 22, 26, 0.18);
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2) !important;
+    border-radius: 0px !important;
+    text-align: left !important;
+  }
+  .sidebar .sidebar-link {
+    font-size: 15px !important;
+  }
+
   body {
     background-image: linear-gradient(to right, #222831 0%, #00adb5 100%);
   }
@@ -633,7 +644,7 @@ nav .container {
     background-color: #393e46 !important;
     display: block !important;
     top: 77px !important;
-    left: 0% !important;
+    right: 0% !important;
 
     z-index: 9999 !important;
   }
@@ -676,9 +687,9 @@ nav .container {
     margin-bottom: 10px;
   }
   .home img {
-    margin-bottom: 10px !important;
+    margin: 10px auto !important;
     padding: 0px !important;
-    width: 170px !important;
+    width: 120px !important;
     padding: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
       rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
@@ -702,9 +713,11 @@ nav .container {
   .my_name_mobile {
     display: block !important;
     font-family: "Montserrat", sans-serif !important;
-
+    text-transform: uppercase;
     font-weight: bold;
-    text-shadow: 1px 1px #00adb5;
+    text-shadow: 1px 1px #222831;
+    font-size: 20px !important;
+    color: #00adb5 !important ;
   }
 
   .about .container-fluid {
@@ -715,6 +728,19 @@ nav .container {
   }
   .projects .container-fluid {
     margin-top: 25% !important;
+  }
+  .box-body {
+    padding: 10px !important;
+  }
+  .box-body .btn {
+    width: 40% !important;
+
+    padding: 10px !important;
+    font-size: 13px !important;
+  }
+
+  .projects .box img {
+    height: 100px !important;
   }
   .contact .container-fluid {
     margin-top: 30% !important;
@@ -742,6 +768,10 @@ nav .container {
     height: 200px !important;
     margin-bottom: 10px !important;
   }
+  .box-body-h6 {
+    font-size: 13px !important;
+  }
+
   .home .Tech_Stack-body div {
     padding: 20px !important;
     border: none !important;
@@ -782,6 +812,9 @@ nav .container {
   .discord-nav {
     background-color: #7289da !important;
     color: white !important;
+  }
+  .contact {
+    text-align: left !important;
   }
   .contact input,
   .contact textarea {
