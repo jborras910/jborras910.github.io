@@ -697,7 +697,7 @@ nav .container {
 
   .home .container {
     margin: 35% auto !important;
-    height: auto;
+    height: 100vh;
   }
 
   .Tech_Stack {
