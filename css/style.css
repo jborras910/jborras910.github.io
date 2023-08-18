@@ -198,7 +198,7 @@ nav .container {
 } */
 
 .about .container {
-  margin: 14% auto !important;
+  margin: 12% auto !important;
 }
 
 .works .container {
@@ -265,7 +265,7 @@ nav .container {
 }
 
 .home .btn {
-  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2) !important;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
   margin-top: 2px !important;
   font-weight: 600;
   font-size: 15px !important;
@@ -313,10 +313,18 @@ nav .container {
   background-attachment: fixed !important;
   background-position: center; */
   background-color: #393e46 !important;
+  position: relative;
 
   color: #eeeeee !important;
   font-weight: 600;
 }
+.bg-topright {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 400px;
+}
+
 .about h1 {
   font-family: "Montserrat", sans-serif !important;
 
@@ -346,7 +354,7 @@ nav .container {
   color: black !important;
 }
 
-.about img {
+.about .container-fluid img {
   padding: 15px !important;
   border-radius: 50% 20% / 10% 40%;
   width: 100% !important;
@@ -597,6 +605,9 @@ nav .container {
 }
 
 @media screen and (max-width: 700px) {
+  .bg-topright {
+    width: 50% !important;
+  }
   .sidebar .fb-nav,
   .sidebar .Linkedin-nav,
   .sidebar .youtube-nav,
@@ -746,7 +757,7 @@ nav .container {
     margin-top: 30% !important;
   }
 
-  .about img {
+  .about .container-fluid img {
     margin-bottom: 15px !important;
     border-radius: 0px !important;
     box-shadow: #00adb5 0px 4px 14px, #00adb5 0px 5px 5px !important;
