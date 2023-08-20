@@ -8,7 +8,7 @@
     <title>Jeferson Borras | Portfolio</title>
 
     <link rel="stylesheet" href="css/style.css" />
-
+    <link rel="stylesheet" type="text/css" href="css/timeline.css" />
     <!--font awesome icon-->
     <script
       src="https://kit.fontawesome.com/6cea1e7bdb.js"
@@ -409,6 +409,7 @@
         <a class="sidebar-link" onclick="mobileMenuToggleNav()" href="#projects"
           ><i class="fa-solid fa-diagram-project mr-2"></i>Projects</a
         >
+
         <a class="sidebar-link" onclick="mobileMenuToggleNav()" href="#contact"
           ><i class="fa-solid fa-address-book mr-2"></i>Contact</a
         >
@@ -527,7 +528,7 @@
 
             <div class="col-md-7">
               <h1 class="its_me" data-aos="fade-right" data-aos-duration="1000">
-                Hello, It's Me 👋
+                Hi There 👋,
               </h1>
               <h1
                 class="my_name_desktop"
@@ -535,7 +536,7 @@
                 data-aos-duration="2000"
                 class="display-5"
               >
-                Jeferson Borras
+                I'm Jeferson <span>Borras</span>
               </h1>
               <h1 class="Typing" data-aos="fade-right" data-aos-duration="1000">
                 I am <span class="auto-type"></span>
@@ -717,17 +718,19 @@
 
     <section class="works" id="works">
       <div class="container-fluid">
-        <div class="container text-center">
+        <div class="container">
           <div class="works-header" data-aos="fade-up" data-aos-duration="1000">
             <h1>Services</h1>
             <p>
-              Jeferson Andaya Borras offers a range of services that cater to
-              the diverse needs of individuals and businesses. Here are the
-              primary services he provides:
+              Jeferson Andaya Borras offers a wide range of services designed to
+              meet the diverse needs of individuals and businesses. These
+              services encompass various aspects of professional and personal
+              development, as well as support for organizational growth. Here's
+              an expanded list of the primary services he provide
             </p>
           </div>
 
-          <div class="row">
+          <div class="row text-center">
             <div class="col-md-4" data-aos="fade-down" data-aos-duration="1000">
               <div class="card">
                 <i class="fa-solid fa-code"></i>
@@ -797,19 +800,62 @@
       </div>
     </section>
 
-    <section class="projects" id="projects">
+    <section
+      class="projects"
+      id="projects"
+      data-aos-duration="1000"
+      data-aos="fade-up"
+    >
       <div class="container-fluid">
-        <div class="container">
-          <h1
-            class="text-center"
-            data-aos-duration="1000"
-            data-aos="zoom-in-down"
-          >
-            Latest <span>Projects</span>
-          </h1>
+        <h1 class="text-center">Latest <span>Projects</span></h1>
 
+        <div class="timeline">
+          <div class="timeline-row">
+            <div
+              class="timeline-time"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+            >
+              <h5>Febuary 2023</h5>
+              <h4>
+                Web Application Queueing System for Technological Institute of
+                the Philippines College of Computer Studies
+              </h4>
+            </div>
+            <div
+              class="timeline-content"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+            >
+              <a href=""> <img src="assets/queueing system.png" alt="" /></a>
+            </div>
+          </div>
+
+          <div class="timeline-row">
+            <div
+              class="timeline-time"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+            >
+              <h5>June 2022</h5>
+              <h4>
+                Web-based Student E-Scholar Tracking and Management System for
+                Pasig City Scholarship Office
+              </h4>
+            </div>
+            <div
+              class="timeline-content"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+            >
+              <a href=""> <img src="assets/PST project.png" alt="" /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="container project-mobile">
           <div class="row">
-            <div class="col-md-6" data-aos="flip-left" data-aos-duration="3000">
+            <div class="col-md-6" data-aos="flip-left" data-aos-duration="1000">
               <div class="box">
                 <img src="assets/queueing system.png" alt="" />
                 <div class="box-body">
@@ -835,7 +881,7 @@
             <div
               class="col-md-6"
               data-aos="flip-right"
-              data-aos-duration="3000"
+              data-aos-duration="1000"
             >
               <div class="box">
                 <img src="assets/PST project.png" alt="" />
@@ -865,14 +911,15 @@
       </div>
     </section>
 
-    <section class="contact" id="contact">
+    <section
+      class="contact"
+      id="contact"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom"
+    >
       <div class="container-fluid">
         <div class="container text-center">
-          <div
-            class="contact-header"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
+          <div class="contact-header">
             <h1>Contact <span>Me</span></h1>
             <p>
               Let's connect and collaborate! If you have any questions,
@@ -882,12 +929,7 @@
             </p>
           </div>
 
-          <form
-            id="myForm"
-            class="text-left form"
-            data-aos="zoom-in"
-            data-aos-duration="1000"
-          >
+          <form id="myForm" class="text-left form">
             <div class="row">
               <div class="col-md-4">
                 <div class="form-group">

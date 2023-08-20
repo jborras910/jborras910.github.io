@@ -42,6 +42,7 @@ body {
   background-image: linear-gradient(to right, #222831 50%, #00adb5 50%);
 }
 .about {
+  height: 100vh !important;
   background-color: #393e46 !important;
 }
 
@@ -209,9 +210,8 @@ nav .container {
   margin-bottom: 5% !important;
 }
 
-.projects .container {
-  margin-top: 7% !important;
-  margin-bottom: 12% !important;
+.projects .container-fluid {
+  margin: 5% auto !important;
 }
 
 .home img {
@@ -223,12 +223,23 @@ nav .container {
 .Tech_Stack {
   margin-top: 10% !important;
 }
-.my_name_desktop {
+.auto-type {
   font-family: "Montserrat", sans-serif !important;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: bold;
   text-shadow: 1px 1px #eeeeee;
+
+  color: #00adb5 !important ;
+}
+.my_name_desktop {
   font-size: 50px !important;
+}
+.my_name_desktop span {
+  font-family: "Montserrat", sans-serif !important;
+  text-transform: capitalize;
+  font-weight: bold;
+  text-shadow: 1px 1px #eeeeee;
+
   color: #00adb5 !important ;
 }
 
@@ -372,6 +383,8 @@ nav .container {
   font-weight: 600;
   margin-bottom: 2% !important;
   color: #eeeeee !important;
+  text-align: left !important;
+  width: 90%;
 }
 .works-header p {
   font-weight: 600 !important;
@@ -430,15 +443,14 @@ nav .container {
   background-size: cover !important;
   background-attachment: fixed !important;
   background-position: center; */
-  background-color: #393e46 !important;
-  color: #eeeeee !important;
+  background-color: #eeeeee !important;
 }
 .projects h1 {
-  margin-bottom: 5% !important;
+  margin-bottom: 1% !important;
   font-family: "Montserrat", sans-serif !important;
-
+  color: #393e46 !important;
   font-weight: bold;
-  text-shadow: 1px 1px #222831;
+  text-shadow: 1px 1px #eeeeee;
 }
 .projects h1 span {
   color: #00adb5;
@@ -605,6 +617,22 @@ nav .container {
 }
 
 @media screen and (max-width: 700px) {
+  .about {
+    height: 100% !important;
+  }
+  .projects {
+    background-color: #393e46 !important;
+  }
+  .projects h1 {
+    color: #eeeeee !important;
+
+    margin-bottom: 40px !important;
+  }
+
+  .works-header {
+    text-align: center !important;
+    width: 100% !important;
+  }
   .bg-topright {
     width: 50% !important;
   }
@@ -732,13 +760,13 @@ nav .container {
   }
 
   .about .container-fluid {
-    margin-top: 30% !important;
+    margin-top: 25% !important;
   }
   .works .container-fluid {
     margin-top: 25% !important;
   }
   .projects .container-fluid {
-    margin-top: 25% !important;
+    margin-top: 10% !important;
   }
   .box-body {
     padding: 10px !important;
