@@ -36,7 +36,7 @@
 .timeline-row h5 {
   color: #393e46;
 }
-.timeline-row h4 {
+.timeline-row h6 {
   color: #00adb5 !important;
 }
 .timeline-row .btn {
@@ -102,8 +102,11 @@
   text-overflow: ellipsis;
   line-height: 150%;
 }
-.timeline-row .timeline-content p {
+.timeline-row p {
+  font-weight: 600;
   margin-bottom: 30px;
+
+  font-size: 15px !important;
 }
 
 .timeline-row:nth-child(even) .timeline-content {
