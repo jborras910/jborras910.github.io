@@ -58,6 +58,7 @@ section {
 }
 .navbar {
   /* Animation */
+
   transition-timing-function: ease-in !important;
   transition: all 0.5s !important;
 }
@@ -114,7 +115,6 @@ section {
   box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2) !important;
   width: 100% !important;
   z-index: 1 !important;
-  padding: 5px !important;
 }
 
 .fixed-nav-black .navbar-brand {
@@ -220,6 +220,7 @@ nav .container {
   padding: 10px;
   width: 100% !important;
 }
+
 .Tech_Stack {
   margin-top: 10% !important;
 }
