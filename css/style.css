@@ -46,7 +46,11 @@ body {
   background-color: #393e46 !important;
 }
 
-.home,
+.home {
+  height: 100% !important;
+  /* background-color: red !important;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%); */
+}
 .contact {
   height: 100% !important;
 }
@@ -56,6 +60,16 @@ section {
 
   padding: 20px !important;
 }
+
+.visitor-counter {
+  position: fixed;
+  width: 100%;
+  top: 110px;
+  left: 10px;
+  z-index: 99;
+  border-radius: 0px !important;
+}
+
 .navbar {
   /* Animation */
 
@@ -860,5 +874,8 @@ nav .container {
   .contact textarea {
     padding: 10px !important ;
     font-size: 14px !important;
+  }
+  .visitor-counter img {
+    display: none !important;
   }
 }
