@@ -69,6 +69,20 @@ section {
   z-index: 99;
   border-radius: 0px !important;
 }
+.Free-Counters {
+  cursor: none;
+}
+.Free-Counters:hover {
+  text-decoration: none !important;
+}
+
+.Free-Counters p {
+  color: transparent;
+}
+.Free-Counters p:hover {
+  text-decoration: none !important;
+  background-color: transparent;
+}
 
 .navbar {
   /* Animation */
@@ -875,7 +889,7 @@ nav .container {
     padding: 10px !important ;
     font-size: 14px !important;
   }
-  .visitor-counter {
+  .visitor-counter img {
     display: none !important;
   }
 }
