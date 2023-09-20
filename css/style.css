@@ -62,11 +62,12 @@ section {
 }
 
 .visitor-counter {
-  position: fixed;
-  width: 100%;
-  top: 110px;
-  left: 10px;
-  z-index: 99;
+  position: absolute;
+
+  width: auto;
+  top: 120px;
+  left: 14px;
+  z-index: 0;
   border-radius: 0px !important;
 }
 .Free-Counters {
@@ -197,6 +198,7 @@ nav .container {
   padding: 20px !important;
   font-weight: 600;
   color: #eeeeee !important;
+  position: relative !important;
 }
 .home .container {
   margin-top: 13% !important;
