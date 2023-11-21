@@ -41,8 +41,8 @@ html {
 body {
   background-image: linear-gradient(to right, #222831 50%, #00adb5 50%);
 }
+
 .about {
-  height: 100vh !important;
   background-color: #393e46 !important;
 }
 
@@ -186,8 +186,9 @@ nav .container {
   padding: 20px;
 }
 .nav-item {
-  margin-left: 15px !important;
+  margin: 0px auto !important;
   font-weight: 600;
+  padding: 0px 10px;
 }
 
 .nav-item .nav-link {
@@ -201,7 +202,7 @@ nav .container {
   position: relative !important;
 }
 .home .container {
-  margin-top: 13% !important;
+  margin-top: 12% !important;
 }
 .home .my_name_mobile {
   display: none;
@@ -246,10 +247,11 @@ nav .container {
 
 .home img {
   cursor: pointer;
-  border-radius: 50%;
-  padding: 10px;
 
+  padding: 10px;
+  border-radius: 50%;
   width: 100% !important;
+  box-shadow: 10px 10px 10px #222831;
 }
 
 .Tech_Stack {
@@ -264,7 +266,7 @@ nav .container {
   color: #00adb5 !important ;
 }
 .my_name_desktop {
-  font-size: 50px !important;
+  font-size: 40px !important;
 }
 .my_name_desktop span {
   font-family: "Montserrat", sans-serif !important;
@@ -286,11 +288,11 @@ nav .container {
 .home .Tech_Stack-body i {
   cursor: pointer;
 
-  font-size: 55px;
+  font-size: 40px;
   transition: transform 0.3s ease-in-out;
 }
 .home .Tech_Stack-body div {
-  padding: 37px !important;
+  padding: 0px 30px !important;
 }
 
 .home .Tech_Stack-body div:hover {
@@ -359,6 +361,7 @@ nav .container {
   position: relative;
 
   color: #eeeeee !important;
+
   font-weight: 600;
 }
 .bg-topright {
@@ -459,10 +462,10 @@ nav .container {
   font-weight: 600;
 
   color: #00adb5 !important;
-  font-size: 70px !important;
+  font-size: 50px !important;
 
   margin: 10px auto !important;
-  padding: 30px !important;
+  padding: 10px !important;
 }
 .works .modal {
   color: #222831 !important;
@@ -477,14 +480,14 @@ nav .container {
   background-position: center; */
   background-color: #eeeeee !important;
 }
-.projects h1 {
+.projects h3 {
   margin-bottom: 1% !important;
   font-family: "Montserrat", sans-serif !important;
   color: #393e46 !important;
   font-weight: bold;
   text-shadow: 1px 1px #eeeeee;
 }
-.projects h1 span {
+.projects h3 span {
   color: #00adb5;
 }
 .projects .box {
@@ -571,7 +574,7 @@ nav .container {
   outline: 0px !important;
   font-family: Arial, FontAwesome;
   width: 100% !important;
-  padding: 13px !important;
+  padding: 10px !important;
   font-weight: 600;
   border: none !important;
   border-radius: 5px !important;
@@ -655,7 +658,7 @@ nav .container {
   .projects {
     background-color: #393e46 !important;
   }
-  .projects h1 {
+  .projects h3 {
     color: #eeeeee !important;
 
     margin-bottom: 40px !important;

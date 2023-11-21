@@ -45,6 +45,21 @@
         background-attachment: fixed;
         background-position: center;
       }
+      #progress-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 5px; /* Height of the progress bar */
+        background-color: transparent;
+        z-index: 1000;
+      }
+
+      #progress-bar {
+        height: 100%;
+        width: 0;
+        background-color: #00adb5; /* Color of the progress bar */
+      }
 
       .modal {
         font-weight: 600 !important;
@@ -108,6 +123,9 @@
   </head>
 
   <body>
+    <div id="progress-container">
+      <div id="progress-bar"></div>
+    </div>
     <div id="particles-js"></div>
 
     <button
@@ -519,7 +537,7 @@
 
     <section class="home" id="home">
       <div class="container-fluid">
-        <!-- <div class="visitor-counter">
+        <div class="visitor-counter">
           <script
             type="text/javascript"
             src="https://freehitcounters.org/count/czku"
@@ -535,7 +553,7 @@
             type="text/javascript"
             src="https://whomania.com/ctr?id=8b97d8c5cec756e33fa41c370252aafe5104298e"
           ></script>
-        </div> -->
+        </div>
 
         <div class="container">
           <div
@@ -751,7 +769,7 @@
       <div class="container-fluid">
         <div class="container">
           <div class="works-header" data-aos="fade-up" data-aos-duration="1000">
-            <h1>Services</h1>
+            <h3>Services</h3>
             <p>
               Jeferson Andaya Borras offers a wide range of services designed to
               meet the diverse needs of individuals and businesses. These
@@ -765,7 +783,7 @@
             <div class="col-md-4" data-aos="fade-down" data-aos-duration="1000">
               <div class="card">
                 <i class="fa-solid fa-code"></i>
-                <h2>Web Development</h2>
+                <h5>Web Development</h5>
                 <p>
                   Using his proficiency in various programming languages such as
                   HTML, CSS, JavaScript, and PHP, Jeferson builds websites that
@@ -786,7 +804,7 @@
             <div class="col-md-4" data-aos="fade-up" data-aos-duration="1000">
               <div class="card">
                 <i class="fa-solid fa-pen-fancy"></i>
-                <h2>Graphic Design</h2>
+                <h5>Graphic Design</h5>
                 <p>
                   In branding, Jeferson excels at crafting unique and memorable
                   logos that encapsulate the essence of a brand. He pays
@@ -807,7 +825,7 @@
             <div class="col-md-4" data-aos="fade-down" data-aos-duration="1000">
               <div class="card">
                 <i class="fa-solid fa-chart-simple"></i>
-                <h2>Digital Marketing</h2>
+                <h5>Digital Marketing</h5>
                 <p>
                   He uses best practises in SEO to optimise clients' websites
                   for greater search engine ranks and increased organic
@@ -838,7 +856,7 @@
       data-aos="fade-up"
     >
       <div class="container-fluid">
-        <h1 class="text-center">Latest <span>Projects</span></h1>
+        <h3 class="text-center">Latest <span>Projects</span></h3>
 
         <div class="timeline">
           <div class="timeline-row">
@@ -1184,13 +1202,27 @@
     var navbar = document.getElementById("navbar");
 
     window.addEventListener("scroll", function () {
-      if (window.scrollY > 1000) {
+      if (window.scrollY > 800) {
         navbar.classList.remove("fixed-nav-black");
         navbar.classList.add("fixed-nav");
       } else {
         navbar.classList.remove("fixed-nav");
         navbar.classList.add("fixed-nav-black");
       }
+    });
+  </script>
+  <script>
+    document.addEventListener("scroll", function () {
+      // Calculate the scroll progress
+      const scrollTop =
+        document.documentElement.scrollTop || document.body.scrollTop;
+      const scrollHeight =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+      const progress = (scrollTop / scrollHeight) * 100;
+
+      // Update the width of the progress bar
+      document.getElementById("progress-bar").style.width = progress + "%";
     });
   </script>
 
