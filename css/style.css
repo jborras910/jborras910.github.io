@@ -454,9 +454,9 @@ nav .container {
   cursor: pointer;
   outline: none !important;
 }
-.works .card .btn:hover {
+/* .works .card .btn:hover {
   background-color: #222831 !important;
-}
+} */
 
 .works i {
   font-weight: 600;
