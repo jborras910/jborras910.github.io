@@ -251,7 +251,6 @@ nav .container {
   padding: 10px;
   border-radius: 50%;
   width: 100% !important;
-  box-shadow: 10px 10px 10px #222831;
 }
 
 .Tech_Stack {
@@ -533,11 +532,6 @@ nav .container {
 .projects .box .btn:hover {
   background-color: #222831;
   color: #eeeeee;
-}
-
-.contact {
-  padding: 10px !important;
-  margin-bottom: 4% !important;
 }
 
 .contact .contact-header {
