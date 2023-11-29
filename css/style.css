@@ -542,7 +542,7 @@ nav .container {
   width: 90% !important;
 }
 .contact .contact-header span {
-  color: #393e46 !important;
+  color: #393e46;
 }
 .contact form {
   margin: 5px auto !important;
@@ -684,7 +684,7 @@ nav .container {
   }
 
   body {
-    background-image: linear-gradient(to right, #222831 0%, #00adb5 100%);
+    background-image: linear-gradient(to right, #393e46 0%, #393e46 80%);
     font-family: Arial, Helvetica, sans-serif !important;
   }
   body p {
@@ -758,7 +758,17 @@ nav .container {
     margin: 10px auto;
     display: block;
     width: 90% !important;
-    border-radius: 40px;
+    border-radius: 40px !important;
+    background-color: transparent !important;
+    border: 2px solid #eeeeee;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  }
+  .home .btn {
+    border: 2px solid #eeeeee;
+    background-color: #eeeeee;
+    border-radius: 50%;
+    font-size: 13px !important;
   }
   .home img {
     margin: 10px auto !important;
@@ -772,6 +782,9 @@ nav .container {
   .home .container {
     margin: 35% auto !important;
     height: 100vh;
+  }
+  .home p {
+    font-size: 12px !important;
   }
 
   .Tech_Stack {
@@ -787,11 +800,17 @@ nav .container {
   .my_name_mobile {
     display: block !important;
     font-family: "Montserrat", sans-serif !important;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-weight: bold;
     text-shadow: 1px 1px #222831;
     font-size: 20px !important;
     color: #00adb5 !important ;
+  }
+  .about,
+  .projects {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   }
 
   .about .container-fluid {
@@ -886,12 +905,18 @@ nav .container {
   .contact {
     text-align: left !important;
   }
+  .contact h1 span {
+    color: #00adb5 !important;
+  }
   .contact input,
   .contact textarea {
     padding: 10px !important ;
     font-size: 14px !important;
   }
   .visitor-counter {
+    display: none !important;
+  }
+  .bg-topright {
     display: none !important;
   }
 }
