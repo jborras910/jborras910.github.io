@@ -753,6 +753,8 @@ nav .container {
 
   .home {
     text-align: center !important;
+
+    height: 100vh !important;
   }
   .home .about_me {
     margin: 10px auto;
@@ -773,7 +775,7 @@ nav .container {
   .home img {
     margin: 10px auto !important;
     padding: 0px !important;
-    width: 120px !important;
+    width: 170px !important;
     padding: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
       rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
@@ -857,9 +859,17 @@ nav .container {
     font-size: 30px !important;
     font-weight: 600 !important;
   }
+  .projects .box {
+    border-radius: 10px !important;
+    width: 100% !important;
+  }
+  .projects .box:hover {
+    box-shadow: none !important;
+  }
   .projects .box img {
     height: 200px !important;
     margin-bottom: 10px !important;
+    border-radius: 10px 10px 0 0 !important;
   }
   .box-body-h6 {
     font-size: 13px !important;
