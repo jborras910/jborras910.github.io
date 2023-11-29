@@ -320,8 +320,8 @@ nav .container {
 .home .btn:hover {
   background-color: #00adb5 !important;
   color: #eeeeee !important;
-  transition: 0.2s;
-  transform: translateY(-10px);
+
+  transform: translateY(-4px) !important;
 }
 
 .about_me {
@@ -479,6 +479,7 @@ nav .container {
   background-position: center; */
   background-color: #eeeeee !important;
 }
+
 .projects h3 {
   margin-bottom: 1% !important;
   font-family: "Montserrat", sans-serif !important;
@@ -585,6 +586,7 @@ nav .container {
   background-color: #393e46 !important;
   color: #eeeeee !important;
   padding: 20px !important;
+  margin-bottom: 0px !important;
 }
 
 .navbar-mobile {
@@ -654,7 +656,7 @@ nav .container {
   }
   .projects h3 {
     color: #eeeeee !important;
-
+    text-shadow: none !important;
     margin-bottom: 40px !important;
   }
 
@@ -683,6 +685,7 @@ nav .container {
 
   body {
     background-image: linear-gradient(to right, #222831 0%, #00adb5 100%);
+    font-family: Arial, Helvetica, sans-serif !important;
   }
   body p {
     font-size: 14px !important;
@@ -752,7 +755,10 @@ nav .container {
     text-align: center !important;
   }
   .home .about_me {
-    margin-bottom: 10px;
+    margin: 10px auto;
+    display: block;
+    width: 90% !important;
+    border-radius: 40px;
   }
   .home img {
     margin: 10px auto !important;
@@ -854,10 +860,6 @@ nav .container {
   .works .card:hover {
     box-shadow: none !important;
     transform: none !important;
-  }
-  .about_me {
-    display: block !important;
-    margin-bottom: 10px;
   }
 
   .fb-nav {

@@ -756,8 +756,7 @@
               Jeferson Andaya Borras offers a wide range of services designed to
               meet the diverse needs of individuals and businesses. These
               services encompass various aspects of professional and personal
-              development, as well as support for organizational growth. Here's
-              an expanded list of the primary services he provide
+              development, as well as support for organizational growth.
             </p>
           </div>
 
@@ -1046,10 +1045,17 @@
             form.addEventListener("submit", function (event) {
               event.preventDefault();
               swal({
-                title: "Error!",
-                text: "Invalid Email, Please Insert the proper email. An email address is a crucial piece of information required for communication, so we want to ensure that the email you provide is accurate and valid. If you encounter this error message, it means that the email address you entered does not meet the necessary format for a valid email address.",
+                title: "Oops...",
+                content: {
+                  element: "div",
+                  attributes: {
+                    innerHTML:
+                      "Unfortunately, this is not functioning at the moment. For assistance, please feel free to reach out to me on <a target='_blank' href='https://www.linkedin.com/in/jeferson-borras-818a661b0/'>https://www.linkedin.com/jeferson-borras</a>",
+                  },
+                },
                 icon: "error",
                 button: "Close",
+                dangerMode: true, // Allows HTML in the text
               });
             });
           </script>
@@ -1059,9 +1065,7 @@
     </section>
 
     <div class="footer container-fluid text-center">
-      <div class="container">
-        <h6>Copyright © by jborras | All Rights Reserved</h6>
-      </div>
+      <h6>Copyright © by jborras | All Rights Reserved</h6>
     </div>
     <!-- Bootstrap Script -->
     <script
