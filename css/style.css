@@ -39,7 +39,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-image: linear-gradient(to right, #222831 50%, #00adb5 50%);
+  background-image: linear-gradient(to right, #222831 50%, #00adb5 10%);
 }
 
 .about {
@@ -245,16 +245,85 @@ nav .container {
   margin: 5% auto !important;
 }
 
-.home img {
-  cursor: pointer;
-
-  padding: 10px;
+.home .mobile-pic {
+  display: none;
+}
+.home .box {
+  position: relative;
+  background: #393e46;
   border-radius: 50%;
-  width: 100% !important;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.home .box:hover {
+  box-shadow: #eeeeee 0px 10px 36px, #eeeeee 0px 20px 40px !important;
+  transition: 0.2s !important;
+  transform: translateY(-10px);
+}
+.home .box::before {
+  content: "";
+  position: absolute;
+  inset: -10px 140px;
+  background: linear-gradient(315deg, white, white);
+  transition: 0.5s;
+  animation: animate 4s linear infinite;
+}
+.home .box:hover::before {
+  inset: -20px 0px;
+}
+.home .box::after {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  background: #00adb5;
+  border-radius: 50%;
+  z-index: 1;
+}
+.home .box .content {
+  position: absolute;
+  inset: 30px;
+  border: 6px solid #393e46;
+  z-index: 3;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home .box .content .anime-pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+  background-color: white !important;
+}
+.home .box:hover .content .anime-pic {
+  background-color: #393e46 !important;
+  transition: 0.5s;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .Tech_Stack {
-  margin-top: 10% !important;
+  padding-top: 5% !important;
 }
 .auto-type {
   font-family: "Montserrat", sans-serif !important;
@@ -647,7 +716,17 @@ nav .container {
   text-decoration: none !important;
 }
 
+@media screen and (max-width: 1000px) {
+  .home .box {
+    margin: 30px auto !important;
+  }
+}
+
 @media screen and (max-width: 700px) {
+  .home .box {
+    display: none;
+  }
+
   .about {
     height: 100% !important;
   }
@@ -772,13 +851,15 @@ nav .container {
     border-radius: 50%;
     font-size: 13px !important;
   }
-  .home img {
+  .home .mobile-pic {
+    border-radius: 50%;
+    display: block;
     margin: 10px auto !important;
     padding: 0px !important;
-    width: 170px !important;
+    width: 150px !important;
     padding: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
-      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+      rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset !important;
   }
 
   .home .container {
