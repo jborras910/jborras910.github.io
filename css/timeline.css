@@ -38,6 +38,8 @@
 }
 .timeline-row h6 {
   color: #00adb5 !important;
+
+  font-weight: 700 !important;
 }
 .timeline-row .btn {
   width: 100%;

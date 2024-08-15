@@ -656,47 +656,98 @@
             </div>
           </div>
 
-          <div class="Tech_Stack text-center">
-            <div class="Tech_Stack-body">
-              <div data-aos="fade-down" data-aos-duration="1000">
-                <i
-                  title="JavaScript"
-                  class="fa-brands fa-js"
-                  style="color: #f0db4f"
-                ></i>
-                <p>JavaScript</p>
-              </div>
-              <div data-aos="fade-up" data-aos-duration="1000">
-                <i class="fa-brands fa-php" style="color: #aeb2d5"></i>
-                <p>PHP</p>
-              </div>
+          <style>
+            .card-swipe {
+              padding: 0px;
+              box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+                rgba(17, 17, 26, 0.05) 0px 8px 32px;
+              border-radius: 10px !important;
 
-              <div data-aos="fade-down" data-aos-duration="1000">
-                <i class="fa-brands fa-react" style="color: #61dbfb"></i>
-                <p>React Js</p>
-              </div>
+              height: 100% !important;
+            }
+            .swiper-slide i {
+              font-size: 55px !important;
+            }
 
-              <div data-aos="fade-up" data-aos-duration="1000">
-                <i class="fa-brands fa-sass" style="color: #cc6699"></i>
-                <p>Sass</p>
+            .swiper-container {
+              text-align: center !important;
+              margin: 0px auto !important;
+              width: 100%;
+
+              height: auto !important;
+              overflow: hidden;
+              margin-bottom: 10px !important;
+            }
+
+            .swiper-slide img {
+              margin-bottom: 0px !important;
+              cursor: pointer;
+
+              width: 100%;
+              height: auto;
+            }
+
+            .swiper-footer {
+              padding: 10px !important;
+            }
+          </style>
+          <div class="tech-stack-container" style="margin: 10% auto">
+            <link
+              rel="stylesheet"
+              href="https://unpkg.com/swiper/swiper-bundle.min.css"
+            />
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+            <div
+              class="swiper-container text-center"
+              data-aos="flip-up"
+              data-aos-duration="1000"
+            >
+              <div class="swiper-wrapper" style="text-align: center">
+                <div class="swiper-slide">
+                  <i
+                    title="JavaScript"
+                    class="fa-brands fa-js"
+                    style="color: #f0db4f"
+                  ></i>
+                  <p>JavaScript</p>
+                </div>
+                <div class="swiper-slide">
+                  <i class="fa-brands fa-php" style="color: #aeb2d5"></i>
+                  <p>PHP</p>
+                </div>
+                <div class="swiper-slide">
+                  <i class="fa-brands fa-react" style="color: #61dbfb"></i>
+                  <p>React Js</p>
+                </div>
+                <div class="swiper-slide">
+                  <i class="fa-brands fa-sass" style="color: #cc6699"></i>
+                  <p>Sass</p>
+                </div>
+                <div class="swiper-slide">
+                  <i class="fa-brands fa-bootstrap" style="color: #59287a"></i>
+                  <p>Bootstrap</p>
+                </div>
+                <div class="swiper-slide">
+                  <i class="fa-brands fa-laravel" style="color: #f05340"></i>
+                  <p>Laravel</p>
+                </div>
+                <div class="swiper-slide">
+                  <i class="fa-brands fa-node" style="color: #3c873a"></i>
+                  <p>Node Js</p>
+                </div>
+                <div class="swiper-slide">
+                  <i class="fa-brands fa-git-alt" style="color: #f1502f"></i>
+                  <p>Git</p>
+                </div>
+                <!-- Add more slides as needed -->
               </div>
-              <div data-aos="fade-down" data-aos-duration="1000">
-                <i class="fa-brands fa-bootstrap" style="color: #59287a"></i>
-                <p>Bootstrap</p>
-              </div>
-              <div data-aos="fade-up" data-aos-duration="1000">
-                <i class="fa-brands fa-laravel" style="color: #f05340"></i>
-                <p>Laravel</p>
-              </div>
-              <div data-aos="fade-down" data-aos-duration="1000">
-                <i class="fa-brands fa-node" style="color: #3c873a"></i>
-                <p>Node Js</p>
-              </div>
-              <div data-aos="fade-up" data-aos-duration="1000">
-                <i class="fa-brands fa-git-alt" style="color: #f1502f"></i>
-                <p>Git</p>
-              </div>
-              <p data-aos="zoom-out" data-aos-duration="1000">
+              <!-- If you want navigation buttons -->
+              <!-- <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div> -->
+              <!-- If you want pagination dots -->
+              <!-- <div class="swiper-pagination"></div> -->
+              <p>
                 I use a powerful and diversified tech stack to create new
                 solutions that propel your company ahead. I ensure that your
                 project is constructed on a solid basis and remains scalable,
@@ -704,6 +755,26 @@
                 technologies and frameworks.
               </p>
             </div>
+
+            <script>
+              var swiper = new Swiper(".swiper-container", {
+                slidesPerView: 6,
+                spaceBetween: 0,
+                loop: true, // Enables continuous loop mode
+                navigation: {
+                  nextEl: ".swiper-button-next",
+                  prevEl: ".swiper-button-prev",
+                },
+                pagination: {
+                  el: ".swiper-pagination",
+                  clickable: true,
+                },
+                autoplay: {
+                  delay: 1500, // Auto-slide every 2.5 seconds
+                  disableOnInteraction: false, // Continue autoplay after interaction
+                },
+              });
+            </script>
           </div>
         </div>
       </div>
@@ -866,28 +937,17 @@
               class="timeline-time"
               data-aos="zoom-in-up"
               data-aos-duration="1000"
-            >
-              <h5>Febuary 2023</h5>
-              <h6>
-                Web Application Queueing System for Technological Institute of
-                the Philippines College of Computer Studies
-              </h6>
-
-              <p>
-                The Web Application Queueing System for the Technological
-                Institute of the Philippines (TIP) College of Computer Studies
-                is a cutting-edge solution designed to optimize the queuing
-                processes within the college's administrative and student
-                service areas.
-              </p>
-              <hr />
-            </div>
+            ></div>
             <div
               class="timeline-content"
               data-aos="flip-left"
               data-aos-easing="ease-out-cubic"
             >
-              <a href=""> <img src="assets/queueing system.png" alt="" /></a>
+              <a target="_blank" href="https://www.wccaviation.com/">
+                <img src="assets/atc.png" alt=""
+              /></a>
+              <br />
+              <h6>WCC Aeronautical and Technological College Website</h6>
             </div>
           </div>
 
@@ -896,27 +956,80 @@
               class="timeline-time"
               data-aos="zoom-in-up"
               data-aos-duration="1000"
+            ></div>
+            <div
+              class="timeline-content"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
             >
-              <h5>June 2022</h5>
-              <h6>
-                Web-based Student E-Scholar Tracking and Management System for
-                Pasig City Scholarship Office
-              </h6>
-
-              <p>
-                The Web-based Student E-Scholar Tracking and Management System
-                is an innovative project developed for the Pasig City
-                Scholarship Office to streamline and enhance the management of
-                scholarship programs for students.
-              </p>
-              <hr />
+              <a target="_blank" href="https://www.worldciti.edu.ph/">
+                <img src="assets/wcc edu.png" alt=""
+              /></a>
+              <br />
+              <h6>World Citi Colleges Website</h6>
             </div>
+          </div>
+
+          <div class="timeline-row">
+            <div
+              class="timeline-time"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+            ></div>
+            <div
+              class="timeline-content"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+            >
+              <a href="">
+                <img src="assets/wcmc_monitoring_project.png" alt=""
+              /></a>
+              <br />
+              <h6>
+                World Citi Medical Center Announcement / INFORMATION MONITORING
+                SYSTEM
+              </h6>
+            </div>
+          </div>
+
+          <div class="timeline-row">
+            <div
+              class="timeline-time"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+            ></div>
+            <div
+              class="timeline-content"
+              data-aos="flip-left"
+              data-aos-easing="ease-out-cubic"
+            >
+              <a href=""> <img src="assets/queueing system.png" alt="" /></a>
+              <br />
+              <h6>
+                Web Application Queueing System for Technological Institute of
+                the Philippines College of Computer Studies
+              </h6>
+            </div>
+          </div>
+
+          <div class="timeline-row">
+            <div
+              class="timeline-time"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+            ></div>
             <div
               class="timeline-content"
               data-aos="flip-left"
               data-aos-easing="ease-out-cubic"
             >
               <a href=""> <img src="assets/PST project.png" alt="" /></a>
+              <br />
+              <h6>
+                Web-based Student E-Scholar Tracking and Management System for
+                Pasig City Scholarship Office
+              </h6>
+              s
             </div>
           </div>
         </div>
@@ -925,23 +1038,60 @@
           <div class="row">
             <div class="col-md-6" data-aos="flip-left" data-aos-duration="1000">
               <div class="box">
+                <img src="assets/atc.png" alt="" />
+                <div class="box-body">
+                  <h6 class="box-body-h6">
+                    WCC Aeronautical and Technological College Website
+                  </h6>
+
+                  <!-- <a class="btn btn-secondary" href=""
+                    >View Here<i class="fa-solid fa-angles-right ml-2"></i
+                  ></a> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6" data-aos="flip-left" data-aos-duration="1000">
+              <div class="box">
+                <img src="assets/wcc edu.png" alt="" />
+                <div class="box-body">
+                  <h6 class="box-body-h6">World Citi Colleges Website</h6>
+
+                  <!-- <a class="btn btn-secondary" href=""
+                    >View Here<i class="fa-solid fa-angles-right ml-2"></i
+                  ></a> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6" data-aos="flip-left" data-aos-duration="1000">
+              <div class="box">
+                <img src="assets/wcmc_monitoring_project.png" alt="" />
+                <div class="box-body">
+                  <h6 class="box-body-h6">
+                    World Citi Medical Center Announcement / INFORMATION
+                    MONITORING SYSTEM
+                  </h6>
+
+                  <!-- <a class="btn btn-secondary" href=""
+                    >View Here<i class="fa-solid fa-angles-right ml-2"></i
+                  ></a> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6" data-aos="flip-left" data-aos-duration="1000">
+              <div class="box">
                 <img src="assets/queueing system.png" alt="" />
                 <div class="box-body">
                   <h6 class="box-body-h6">
                     Web Application Queueing System for Technological Institute
                     of the Philippines College of Computer Studies
                   </h6>
-                  <hr />
-                  <p>
-                    The Web Application Queueing System for the Technological
-                    Institute of the Philippines (TIP) College of Computer
-                    Studies is a cutting-edge solution designed to optimize the
-                    queuing processes within the college's administrative and
-                    student service areas.
-                  </p>
-                  <a class="btn btn-secondary" href=""
+
+                  <!-- <a class="btn btn-secondary" href=""
                     >View Here<i class="fa-solid fa-angles-right ml-2"></i
-                  ></a>
+                  ></a> -->
                 </div>
               </div>
             </div>
@@ -958,19 +1108,13 @@
                     Web-based Student E-Scholar Tracking and Management System
                     for Pasig City Scholarship Office
                   </h6>
-                  <hr />
-                  <p>
-                    The Web-based Student E-Scholar Tracking and Management
-                    System is an innovative project developed for the Pasig City
-                    Scholarship Office to streamline and enhance the management
-                    of scholarship programs for students.
-                  </p>
-                  <a
+
+                  <!-- <a
                     class="btn btn-secondary"
                     target="_blank"
                     href="https://pcs-escholar.com/"
                     >View Here<i class="fa-solid fa-angles-right ml-2"></i
-                  ></a>
+                  ></a> -->
                 </div>
               </div>
             </div>
@@ -1233,6 +1377,6 @@
     });
   </script>
 
-  <script src="script/particles.js"></script>
+  <!-- <script src="script/particles.js"></script> -->
   <script src="script/app.js"></script>
 </html>
