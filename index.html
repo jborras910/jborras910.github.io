@@ -1266,7 +1266,7 @@
       sections.forEach((section) => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
-        if (window.scrollY >= sectionTop - sectionHeight / 3) {
+        if (window.scrollY >= sectionTop - sectionHeight / 5) {
           // Remove the active class from all navigation links
           navLinks.forEach((link) => {
             link.classList.remove("active");
