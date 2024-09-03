@@ -39,7 +39,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-image: linear-gradient(to right, #222831 50%, #00adb5 10%);
+  background-image: linear-gradient(to right, #222831 0%, #00adb5 100%);
 }
 
 .about {
@@ -102,6 +102,18 @@ section {
     rgba(0, 0, 0, 0.07) 0px 32px 64px;
 
   padding: 10px 30px !important;
+  text-decoration: none !important;
+}
+.toggle_light {
+  font-weight: 700 !important;
+  background-color: #00adb5 !important;
+  color: #eeeeee !important;
+  cursor: pointer;
+  box-shadow: #00adb5 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px,
+    rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px,
+    rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  margin-left: 10px !important;
+  padding: 10px 15px !important;
   text-decoration: none !important;
 }
 

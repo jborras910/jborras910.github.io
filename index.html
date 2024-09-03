@@ -46,6 +46,76 @@
         background-position: center;
       }
 
+      body.light-mode {
+        background-image: linear-gradient(to right, #222831 0%, #00adb5 100%);
+        color: #000000;
+      }
+
+      body.dark-mode {
+        background-image: linear-gradient(to right, #222831 100%, #00adb5 0%);
+        color: #ffffff;
+      }
+      body.dark-mode .contact span {
+        color: #00adb5 !important ;
+      }
+      body.dark-mode .contact .btn {
+        /* background-color: #00adb5 !important; */
+      }
+      body.dark-mode .home .btn {
+        color: #eeeeee !important ;
+        background-color: #00adb5 !important;
+        transition: 0.5s !important;
+      }
+      body.dark-mode .home .btn:hover {
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px,
+          rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+          rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+      }
+
+      body.dark-mode .projects {
+        background-color: #393e46 !important;
+      }
+
+      body.dark-mode .timeline:after {
+        border-right: 2px solid #00adb5 !important;
+      }
+      body.dark-mode .timeline-content {
+        background: #222831 !important;
+      }
+      body.dark-mode .timeline-row .timeline-content:after {
+        background: #222831 !important;
+      }
+
+      body.dark-mode .timeline-row .timeline-content:before {
+        background: #00adb5 !important;
+        border: 2px dashed #00adb5 !important;
+      }
+      body.dark-mode .projects h3 {
+        color: #eeeeee !important;
+      }
+
+      /* Additional dark mode styles for other elements */
+      .navbar.dark-mode {
+        background-color: #222831 !important;
+      }
+
+      .navbar.dark-mode .nav-item a,
+      .navbar.dark-mode .navbar-brand {
+        color: #fff !important;
+      }
+
+      .toggle_light i {
+        transition: color 0.3s;
+      }
+
+      body.dark-mode .toggle_light i {
+        color: #f0db4f; /* Lightbulb color in dark mode */
+      }
+
+      /* Customize the lightbulb icon */
+      .toggle_light i {
+        color: #eeeeee; /* Default color */
+      }
       #progress-container {
         position: fixed;
         top: 0;
@@ -477,6 +547,53 @@
       </div>
     </div>
 
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const toggleButton = document.getElementById("toggle_light");
+        const icon = toggleButton.querySelector("i");
+        const body = document.body;
+        const navbar = document.getElementById("navbar");
+
+        // Function to update the icon based on the current theme
+        function updateIcon() {
+          if (body.classList.contains("dark-mode")) {
+            icon.classList.remove("fa-lightbulb");
+            icon.classList.add("fa-moon"); // Example: Change to a moon icon
+          } else {
+            icon.classList.remove("fa-moon");
+            icon.classList.add("fa-lightbulb");
+          }
+        }
+
+        // Check if the user has a preference saved
+        if (localStorage.getItem("theme") === "dark") {
+          body.classList.add("dark-mode");
+          navbar.classList.add("dark-mode");
+        } else {
+          body.classList.add("light-mode");
+        }
+
+        // Initial icon update
+        updateIcon();
+
+        toggleButton.addEventListener("click", () => {
+          body.classList.toggle("dark-mode");
+          body.classList.toggle("light-mode");
+          navbar.classList.toggle("dark-mode");
+
+          // Save the user's preference
+          if (body.classList.contains("dark-mode")) {
+            localStorage.setItem("theme", "dark");
+          } else {
+            localStorage.setItem("theme", "light");
+          }
+
+          // Update the icon after toggling the theme
+          updateIcon();
+        });
+      });
+    </script>
+
     <nav
       id="navbar"
       class="navbar navbar-expand-lg navbar-light fixed-top fixed-nav-black nav-desktop"
@@ -525,6 +642,12 @@
                 target="_blank"
               >
                 <i class="fa-solid fa-download mr-2"></i>Download CV
+              </a>
+            </li>
+
+            <li>
+              <a id="toggle_light" class="btn-block toggle_light text-center">
+                <i class="fa-solid fa-lightbulb"></i>
               </a>
             </li>
           </ul>
@@ -588,7 +711,7 @@
                 data-aos-duration="2000"
                 class="display-5"
               >
-                I'm Jeferson <span>Borras</span>
+                I'm Jeferson <span class="last_name_">Borras</span>
               </h1>
               <h1 class="Typing" data-aos="fade-right" data-aos-duration="1000">
                 I am <span class="auto-type"></span>
@@ -1029,7 +1152,6 @@
                 Web-based Student E-Scholar Tracking and Management System for
                 Pasig City Scholarship Office
               </h6>
-              s
             </div>
           </div>
         </div>
