@@ -347,6 +347,14 @@ nav .container {
 }
 .my_name_desktop {
   font-size: 40px !important;
+  text-shadow: 1px 1px #eeeeee;
+  background-image: url("../assets/flame.gif") !important;
+  background-size: cover !important;
+  background-position: center !important;
+  color: transparent !important;
+  background-clip: text !important;
+  font-weight: 700 !important;
+  -webkit-background-visibility: text !important;
 }
 .my_name_desktop span {
   font-family: "Montserrat", sans-serif !important;
