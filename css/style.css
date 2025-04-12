@@ -786,7 +786,7 @@ nav .container {
   }
 
   body {
-    background-image: linear-gradient(to right, #393e46 0%, #393e46 80%);
+    background-image: linear-gradient(to right, #fff 20%, #393e46 80%);
     font-family: Arial, Helvetica, sans-serif !important;
   }
   body p {
